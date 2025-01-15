@@ -15,6 +15,10 @@ const config: Config = {
 		},
 		extend: {
 			colors: {
+				'umass-maroon': '#881c1c',
+				'umass-black': '#212721',
+				'nvidia-green': '#76b900',
+				'terminal-green': '#4af626',
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",

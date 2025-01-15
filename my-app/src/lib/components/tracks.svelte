@@ -2,7 +2,6 @@
     import * as Card from "$lib/components/ui/card";
     import * as Accordion from "$lib/components/ui/accordion/index.js";
 </script>
-
 <div class="flex justify-center">
   <Accordion.Root class="m-14 max-w-3xl w-full">
     <Accordion.Item value="item-1">
