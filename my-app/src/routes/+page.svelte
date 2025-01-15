@@ -1,6 +1,6 @@
-<script lang="ts">
-    import { Button } from "$lib/components/ui/button";
+<script>
+  import Calendar from "$lib/components/calendar.svelte"
+  import PrevCalendar from "$lib/components/prev_calendar.svelte"
 </script>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<Button>Click me</Button>
+<Calendar />
+<PrevCalendar />
