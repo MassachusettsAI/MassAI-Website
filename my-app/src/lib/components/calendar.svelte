@@ -35,10 +35,18 @@
             location: 'Integrative Learning Center S220'
         },
         {
+            title: 'Project Team Formation Meeting',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-14-2025',
+            time: '1:00 am - 4:00 pm',
+            location: 'Integrative Learning Center S220'
+        },
+        {
             title: 'Reading Group Inaugural Meeting',
             track: 'research',
             trackName: 'Research Track',
-            date: '01-19-2025',
+            date: '01-13-2025',
             time: '7:00 - 8:00 pm',
             location: 'Worcester Dining Commons 3rd Floor, Room 301'
         }
@@ -193,19 +201,19 @@
 
         // Check if event is this week
         if (startDate >= currentWeekStart && startDate < nextWeekStart) {
-            return "This Week!";
+            return "This Week";
         }
 
         // Check if event is next week
         if (startDate >= nextWeekStart && startDate <= nextWeekEnd) {
-            return "Next Week!";
+            return "Next Week";
         }
 
         return ""; // Return empty string if none of the above conditions are met
     }
 </script>
 
-<div class="p-6">
+<div class="p-6 text-base">
   {#each sortedEvents as event, index}
     <div class="rounded-lg border border-gray-200 {trackStyles[event.track].cardBg} {index !== sortedEvents.length - 1 ? 'mb-8' : ''} transition-transform duration-200 hover:-translate-y-1">
       <div class="p-6">
