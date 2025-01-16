@@ -7,14 +7,8 @@
   import AboutUs from "$lib/components/about_us.svelte"
 </script>
 <Logo />
-<<<<<<< HEAD
 <AboutUs />
-<Calendar />
-<PrevCalendar />
-<Tracks />
-<Officers />
-=======
 <CurEvents />
 <PrevEvents />
 <Tracks />
->>>>>>> 69cb799 (Added calendar logic)
+<Officers />
