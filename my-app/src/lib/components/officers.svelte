@@ -27,8 +27,8 @@
     ];
 </script>
 
-<div class="text-center my-8">
-    <h2 class="text-3xl font-bold">MassAI Leadership</h2>
+<div class="text-center my-12">
+    <h2 class="text-3xl font-bold">MassAI Leadership:</h2>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
