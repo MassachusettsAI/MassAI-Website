@@ -3,13 +3,13 @@
         {
             name: " Donald Winkelman",
             title: "Co-President",
-            picture: "/images/ml-logo-border.png",
+            picture: "/images/donnie.png",
             bio: "Coming soon..."
         },
         {
             name: " Aryaman Tepal",
             title: "Co-President",
-            picture: "/images/ml-logo-border.png",
+            picture: "/images/aryaman.png",
             bio: "Coming soon..."
         },
         {
