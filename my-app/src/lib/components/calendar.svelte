@@ -259,6 +259,9 @@
 
     // Creates indicator that the event is happening now, today, tomorrow, this week, or next week
     function getEventTimeframe(startDate: Date, endDate: Date): string {
+        if (timeframe === 'past') {
+            return "";
+        }
         const now = new Date();
 
         // Check if event is happening now
