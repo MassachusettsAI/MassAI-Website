@@ -8,7 +8,8 @@
     canvas.height = window.innerHeight;
 
     let particlesArray = [];
-    const numberOfParticles = 100;
+    const numberOfParticles = 130;
+    const maxDistance = 100; // Maximum distance for drawing lines between particles
 
     class Particle {
       constructor(public x: number, public y: number, public directionX: number, public directionY: number, public size: number, public color: string) {}
@@ -33,6 +34,37 @@
       }
     }
 
+    function getRandomRedColor() {
+      const colors = [
+        '#FF0000', 
+        '#DC143C', 
+        '#B22222', 
+        '#8B0000', 
+        '#FF4500'  
+      ];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function connect() {
+      for (let a = 0; a < particlesArray.length; a++) {
+        for (let b = a; b < particlesArray.length; b++) {
+          const dx = particlesArray[a].x - particlesArray[b].x;
+          const dy = particlesArray[a].y - particlesArray[b].y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (distance < maxDistance) {
+            const opacity = 1 - (distance / maxDistance);
+            ctx.strokeStyle = `rgba(255, 0, 0, ${opacity * 0.2})`; // Red lines with opacity
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+            ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
     function init() {
       particlesArray = [];
       for (let i = 0; i < numberOfParticles; i++) {
@@ -41,7 +73,7 @@
         let y = Math.random() * (window.innerHeight - size * 2);
         let directionX = Math.random() * 0.5 - 0.25;
         let directionY = Math.random() * 0.5 - 0.25;
-        let color = 'rgba(255, 255, 255, 0.5)';
+        let color = getRandomRedColor();
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
       }
     }
@@ -49,7 +81,9 @@
     function animate() {
       requestAnimationFrame(animate);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+      
+      connect();
+      
       particlesArray.forEach(particle => {
         particle.update();
       });
@@ -94,7 +128,6 @@
     overflow: hidden;
   }
 
-  /* animation background */
   #mlCanvas {
     position: absolute;
     top: 0;
@@ -103,7 +136,7 @@
   }
 
   #hero h1 {
-    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    background: linear-gradient(90deg,rgb(182, 33, 33),rgb(187, 38, 38));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
