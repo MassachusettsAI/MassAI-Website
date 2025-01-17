@@ -5,11 +5,16 @@ const config: Config = {
 	darkMode: ["class"],
 	content: ["./src/**/*.{html,js,svelte,ts}"],
 	safelist: ["dark"],
+	important: true,
 	theme: {
 		container: {
 			center: true,
 			padding: "2rem",
 			screens: {
+				sm: '640px',
+				md: '768px',
+				lg: '1024px',
+				xl: '1280px',
 				"2xl": "1400px"
 			}
 		},
@@ -17,8 +22,6 @@ const config: Config = {
 			colors: {
 				'umass-maroon': '#881c1c',
 				'umass-black': '#212721',
-				'nvidia-green': '#76b900',
-				'terminal-green': '#4af626',
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
@@ -59,8 +62,23 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
-			}
+				sans: [
+					'"Inter"',
+					'system-ui',
+					'-apple-system',
+					'BlinkMacSystemFont',
+					'"Segoe UI"',
+					'Roboto',
+					'"Helvetica Neue"',
+					'Arial',
+					'"Noto Sans"',
+					'sans-serif',
+					'"Apple Color Emoji"',
+					'"Segoe UI Emoji"',
+					'"Segoe UI Symbol"',
+					'"Noto Color Emoji"',
+				],
+			},
 		}
 	},
 };
