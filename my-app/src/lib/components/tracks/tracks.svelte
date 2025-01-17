@@ -9,7 +9,7 @@
   <h2 class="text-3xl font-bold text-center mb-0">Tracks:</h2>
 </div>
 <div class="flex justify-center">
-  <Accordion.Root class="m-1 max-w-3xl w-full">
+  <Accordion.Root class="m-1 max-w-3xl w-full" value="item-1">
     <Accordion.Item value="item-1">
       <Accordion.Trigger class="text-2xl text-emerald-500 w-full">
         <div class="w-full flex items-center justify-center">
