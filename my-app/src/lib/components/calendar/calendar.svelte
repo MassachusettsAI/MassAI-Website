@@ -1,6 +1,7 @@
 <script lang="ts">
     export let timeframe: 'past' | 'future';
     import * as Card from "$lib/components/ui/card";
+    import { onMount, onDestroy } from 'svelte';
 
     // Event card styles
     const trackStyles = {
@@ -27,6 +28,14 @@
     */
     const events = [
         // Basic formats
+        {
+            title: 'Reactivity Test',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-17-2025',
+            time: '2:43 - 2:44 pm',  // Should not be "Happening Now" at 6pm
+            location: 'Location 1'
+        },
         {
             title: 'Basic PM-PM Format',
             track: 'project',
@@ -135,6 +144,16 @@
         }
     ];
 
+    // Add current time state
+    $: currentTime = new Date();
+
+    onMount(() => {
+        // Update current time every second
+        setInterval(() => {
+            currentTime = new Date();
+        }, 1000);
+    });
+
     // Create a date with time set to start of event
     function parseEventStartDate(dateStr: string, timeStr: string): Date {
         // Parse date
@@ -200,17 +219,16 @@
     $: filteredEvents = events.filter(event => {
         const eventStartDate = parseEventStartDate(event.date, event.time);
         const eventEndDate = parseEventEndDate(event.date, event.time);
-        const now = new Date();
 
         if (timeframe === 'past') {
             // Show in past events if:
             // 1. Event has ended (end time is in the past)
-            return eventEndDate < now;
+            return eventEndDate < currentTime;
         } else {
             // Show in future events if:
             // 1. Event hasn't started yet (start time is in the future) OR
             // 2. Event is ongoing (started but hasn't ended yet)
-            return eventStartDate >= now || (eventStartDate <= now && eventEndDate >= now);
+            return eventStartDate >= currentTime || (eventStartDate <= currentTime && eventEndDate >= currentTime);
         }
     });
 
@@ -226,13 +244,12 @@
         const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-        const today = new Date();
-        const nextWeekStart = new Date(today);
-        nextWeekStart.setDate(today.getDate() + 7);
+        const nextWeekStart = new Date(currentTime);
+        nextWeekStart.setDate(currentTime.getDate() + 7);
 
         // Get start of current week (Sunday)
-        const currentWeekStart = new Date(today);
-        currentWeekStart.setDate(today.getDate() - today.getDay());
+        const currentWeekStart = new Date(currentTime);
+        currentWeekStart.setDate(currentTime.getDate() - currentTime.getDay());
 
         // Get start of next week
         const nextWeekEnd = new Date(nextWeekStart);
@@ -262,23 +279,22 @@
         if (timeframe === 'past') {
             return "";
         }
-        const now = new Date();
 
         // Check if event is happening now
-        if (now >= startDate && now <= endDate) {
+        if (currentTime >= startDate && currentTime <= endDate) {
             return "Happening Now!";
         }
 
         // Check if event is today
-        if (startDate.getFullYear() === now.getFullYear() &&
-            startDate.getMonth() === now.getMonth() &&
-            startDate.getDate() === now.getDate()) {
+        if (startDate.getFullYear() === currentTime.getFullYear() &&
+            startDate.getMonth() === currentTime.getMonth() &&
+            startDate.getDate() === currentTime.getDate()) {
             return "Today!";
         }
 
         // Check if event is tomorrow
-        const tomorrow = new Date(now);
-        tomorrow.setDate(now.getDate() + 1);
+        const tomorrow = new Date(currentTime);
+        tomorrow.setDate(currentTime.getDate() + 1);
         if (startDate.getFullYear() === tomorrow.getFullYear() &&
             startDate.getMonth() === tomorrow.getMonth() &&
             startDate.getDate() === tomorrow.getDate()) {
@@ -286,8 +302,8 @@
         }
 
         // Get start of current week (Sunday)
-        const currentWeekStart = new Date(now);
-        currentWeekStart.setDate(now.getDate() - now.getDay());
+        const currentWeekStart = new Date(currentTime);
+        currentWeekStart.setDate(currentTime.getDate() - currentTime.getDay());
 
         // Get start of next week
         const nextWeekStart = new Date(currentWeekStart);
