@@ -33,7 +33,7 @@
             track: 'project',
             trackName: 'Project Track',
             date: '01-17-2025',
-            time: '2:43 - 2:44 pm',  // Should not be "Happening Now" at 6pm
+            time: '4:00 - 4:01 pm',  // Should not be "Happening Now" at 6pm
             location: 'Location 1'
         },
         {
@@ -144,13 +144,18 @@
         }
     ];
 
+    // Gets current EST time
+    function getCurrentEST(): Date {
+        return new Date(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}));
+    }
+
     // Add current time state
-    $: currentTime = new Date();
+    $: currentTime = getCurrentEST();
 
     onMount(() => {
         // Update current time every second
         setInterval(() => {
-            currentTime = new Date();
+            currentTime = getCurrentEST();
         }, 1000);
     });
 
