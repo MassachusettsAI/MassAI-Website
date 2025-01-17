@@ -26,29 +26,112 @@
         location - No special formatting
     */
     const events = [
+        // Basic formats
         {
-            title: 'Project Team Formation Meeting',
+            title: 'Basic PM-PM Format',
             track: 'project',
             trackName: 'Project Track',
             date: '01-16-2025',
-            time: '1:00 am - 4:00 pm',
-            location: 'Integrative Learning Center S220'
+            time: '8:00 - 9:00 pm',  // Should not be "Happening Now" at 6pm
+            location: 'Location 1'
         },
         {
-            title: 'Project Team Formation Meeting',
+            title: 'Basic AM-PM Format',
             track: 'project',
             trackName: 'Project Track',
-            date: '01-14-2025',
-            time: '1:00 am - 4:00 pm',
-            location: 'Integrative Learning Center S220'
+            date: '01-16-2025',
+            time: '8:00 am - 5:00 pm',  // Should not be "Happening Now" at 6pm
+            location: 'Location 2'
+        },
+
+        // Edge Cases - Meridian Handling
+        {
+            title: 'No Start Meridian',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-16-2025',
+            time: '8:00 - 9:00 pm',  // Should interpret as 8:00 PM
+            location: 'Location 3'
         },
         {
-            title: 'Reading Group Inaugural Meeting',
+            title: 'No Minutes',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-16-2025',
+            time: '8 am - 9 pm',  // Should handle missing minutes
+            location: 'Location 4'
+        },
+
+        // Time Crossing Cases
+        {
+            title: 'AM to PM Crossing',
             track: 'research',
             trackName: 'Research Track',
-            date: '01-13-2025',
-            time: '7:00 - 8:00 pm',
-            location: 'Worcester Dining Commons 3rd Floor, Room 301'
+            date: '01-16-2025',
+            time: '11:00 am - 2:00 pm',  // Should not be "Happening Now" at 6pm
+            location: 'Location 5'
+        },
+        {
+            title: 'Currently Happening',
+            track: 'research',
+            trackName: 'Research Track',
+            date: '01-16-2025',
+            time: '5:00 pm - 7:00 pm',  // Should be "Happening Now" at 6pm
+            location: 'Location 6'
+        },
+
+        // Format Variations
+        {
+            title: 'Compact Format',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-16-2025',
+            time: '8am - 5pm',  // Should handle no spaces before meridian
+            location: 'Location 7'
+        },
+        {
+            title: 'Period Instead of Colon',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-16-2025',
+            time: '8.00 am - 5.00 pm',  // Should handle periods instead of colons
+            location: 'Location 8'
+        },
+
+        // Noon/Midnight Cases
+        {
+            title: 'Noon Crossing',
+            track: 'research',
+            trackName: 'Research Track',
+            date: '01-16-2025',
+            time: '11:00 am - 1:00 pm',  // Tests noon crossing
+            location: 'Location 9'
+        },
+        {
+            title: '12 Hour Format Edge',
+            track: 'research',
+            trackName: 'Research Track',
+            date: '01-16-2025',
+            time: '12:00 pm - 1:00 pm',  // Tests proper handling of 12 PM
+            location: 'Location 10'
+        },
+
+        // Current Time Edge Cases
+        {
+            title: 'Just Before Current Time',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-16-2025',
+            time: '5:45 pm - 6:15 pm',  // Should be "Happening Now" at 6pm
+            location: 'Location 11'
+        },
+        {
+            title: 'Spans Current Time',
+            track: 'project',
+            trackName: 'Project Track',
+            date: '01-16-2025',
+            time: '5:00 pm - 7:00 pm',  // Should be "Happening Now" at 6pm
+            location: 'Location 12'
         }
     ];
 
@@ -57,13 +140,21 @@
         // Parse date
         const [month, day, year] = dateStr.split('-').map(Number);
 
-        // Parse start time
-        const timeMatch = timeStr.match(/(\d+)(?::(\d+))?\s*-\s*\d+(?::\d+)?\s*(am|pm)/i);
-        if (!timeMatch) return new Date(year, month - 1, day);
+        // Split time string into start and end components
+        const [startTime, endTime] = timeStr.split('-').map(s => s.trim());
 
-        let hours = parseInt(timeMatch[1]);
-        const minutes = timeMatch[2] ? parseInt(timeMatch[2]) : 0;
-        const meridian = timeMatch[3].toLowerCase();
+        // Parse start time with optional colons
+        const startMatch = startTime.match(/^(\d+)(?:[:.]?(\d+))?\s*(am|pm)?$/i);
+        if (!startMatch) return new Date(year, month - 1, day);
+
+        // Parse end time to get meridian if start doesn't have one
+        const endMatch = endTime.match(/(\d+)(?:[:.]?(\d+))?\s*(am|pm)$/i);
+        if (!endMatch) return new Date(year, month - 1, day);
+
+        let hours = parseInt(startMatch[1]);
+        const minutes = startMatch[2] ? parseInt(startMatch[2]) : 0;
+        // Use start meridian if exists, otherwise use end meridian
+        const meridian = (startMatch[3] || endMatch[3]).toLowerCase();
 
         // Convert to 24-hour format
         if (meridian === 'pm' && hours !== 12) {
@@ -72,22 +163,23 @@
             hours = 0;
         }
 
-        // Construct date object
         const date = new Date(year, month - 1, day);
-        date.setHours(hours, minutes, 0, 0); // Set hours, minutes, seconds=0, ms=0
+        date.setHours(hours, minutes, 0, 0);
         return date;
     }
 
-    // Create a date with time set to start of event
+    // Create a date with time set to end of event
     function parseEventEndDate(dateStr: string, timeStr: string): Date {
         // Parse date
         const [month, day, year] = dateStr.split('-').map(Number);
 
-        // Parse end time
-        const timeMatch = timeStr.match(/\d+(?::\d+)?\s*-\s*(\d+)(?::(\d+))?\s*(am|pm)/i);
+        // Split time string and get end time
+        const [_, endTime] = timeStr.split('-').map(s => s.trim());
+
+        // Parse end time with optional colons
+        const timeMatch = endTime.match(/^(\d+)(?:[:.]?(\d+))?\s*(am|pm)$/i);
         if (!timeMatch) return new Date(year, month - 1, day);
 
-        // Convert end time to hours, minutes, and meridian
         let hours = parseInt(timeMatch[1]);
         const minutes = timeMatch[2] ? parseInt(timeMatch[2]) : 0;
         const meridian = timeMatch[3].toLowerCase();
@@ -99,9 +191,8 @@
             hours = 0;
         }
 
-        // Construct date object
         const date = new Date(year, month - 1, day);
-        date.setHours(hours, minutes, 0, 0); // Set hours, minutes, seconds=0, ms=0
+        date.setHours(hours, minutes, 0, 0);
         return date;
     }
 
@@ -110,12 +201,16 @@
         const eventStartDate = parseEventStartDate(event.date, event.time);
         const eventEndDate = parseEventEndDate(event.date, event.time);
         const now = new Date();
-        const isToday = getEventTimeframe(eventStartDate, eventEndDate) === 'Today!';
 
         if (timeframe === 'past') {
-            return eventEndDate < now && !isToday;
+            // Show in past events if:
+            // 1. Event has ended (end time is in the past)
+            return eventEndDate < now;
         } else {
-            return (eventStartDate >= now || (eventStartDate <= now && eventEndDate >= now)) || isToday;
+            // Show in future events if:
+            // 1. Event hasn't started yet (start time is in the future) OR
+            // 2. Event is ongoing (started but hasn't ended yet)
+            return eventStartDate >= now || (eventStartDate <= now && eventEndDate >= now);
         }
     });
 
