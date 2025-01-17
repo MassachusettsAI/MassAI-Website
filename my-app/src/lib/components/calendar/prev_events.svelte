@@ -1,7 +1,7 @@
 <script lang="ts">
     import * as Card from "$lib/components/ui/card";
-    import * as Accordion from "$lib/components/ui/accordion/index.js";
-    import Calendar from "$lib/components/calendar.svelte"
+    import * as Accordion from "$lib/components/ui/accordion";
+    import Calendar from "$lib/components/calendar/calendar.svelte"
 </script>
 
 <div class="flex justify-center">

@@ -1,6 +1,6 @@
 <script lang="ts">
   import * as Card from "$lib/components/ui/card";
-  import Calendar from "$lib/components/calendar.svelte"
+  import Calendar from "$lib/components/calendar/calendar.svelte"
 </script>
 <div class="flex justify-center">
   <Card.Root class="bg-sky-50 m-14 max-w-3xl w-full">
