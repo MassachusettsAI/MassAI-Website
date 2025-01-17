@@ -5,6 +5,8 @@
   import Logo from "$lib/components/logo.svelte"
   import Officers from "$lib/components/officers.svelte"
   import AboutUs from "$lib/components/about_us.svelte"
+  import Backdrop from "$lib/components/backdrop.svelte"
+
 </script>
 
 <!-- Navigation Bar -->
@@ -29,6 +31,7 @@
 </nav>
 
 
+<Backdrop />
 
 
 <!-- About Us Section -->
