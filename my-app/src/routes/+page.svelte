@@ -32,25 +32,25 @@
 
 
 <!-- About Us Section -->
-<section id="about" class="bg-gradient-section text-white py-16 px-8 relative overflow-hidden">
+<section id="about" class="bg-gradient-section text-white py-24 px-8 relative overflow-hidden">
   <AboutUs />
 
 </section>
 
 <!-- Tracks Section -->
-<section id="tracks" class="bg-white text-black py-16 px-8">
+<section id="tracks" class="bg-white text-black py-0 px-8">
   <Tracks />
 </section>
 
 <!-- Events Section -->
-<section id="events" class="bg-gray-100 text-black py-16 px-8">
+<section id="events" class="bg-gray-100 text-black py-0 px-8">
   <CurEvents />
 <PrevEvents />
 </section>
 
 
 <!-- Officers Section -->
-<section id="officers" class="bg-gray-200 text-black py-16 px-8">
+<section id="officers" class="bg-gray-200 text-black py-1 px-8">
   <Officers />
 </section>
 
