@@ -4,7 +4,7 @@
             name: " Donald Winkelman",
             title: "Co-President",
             picture: "/images/donnie.png",
-            bio: "Coming soon..."
+            bio: "Hi y’all, I’m Donnie! I’m in the MS CS program at UMass and delving further into deep learning! I’ve done some research in interpretability and safety (exploring how models think) alongside experiments with computer vision models. I enjoy reading papers in medicine and ML and want to specialize in medical AI to increase diagnostic accuracy, surgical accuracy, enable the development of more complex laboratory-made proteins, and much more. Look forward to meeting y'all!"
         },
         {
             name: " Aryaman Tepal",

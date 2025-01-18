@@ -23,8 +23,8 @@
     <!-- Navigation Links -->
     <ul class="flex space-x-6">
       <li><a href="#about" class="hover:text-gray-800">About Us</a></li>
-      <li><a href="#events" class="hover:text-gray-800">Events</a></li>
       <li><a href="#tracks" class="hover:text-gray-800">Tracks</a></li>
+      <li><a href="#events" class="hover:text-gray-800">Events</a></li>
       <li><a href="#contact" class="hover:text-gray-800">Contact</a></li>
     </ul>
   </div>
