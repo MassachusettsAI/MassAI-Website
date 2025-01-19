@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/calendar",
+      "methods": ["GET", "OPTIONS"],
+      "dest": "/api/calendar.js"
+    }
+  ]
+}

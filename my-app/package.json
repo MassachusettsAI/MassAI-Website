@@ -11,8 +11,11 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/adapter-vercel": "^5.5.3",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/gapi": "^0.0.47",
+		"@types/google.accounts": "^0.0.15",
 		"autoprefixer": "^10.4.20",
 		"bits-ui": "^0.21.16",
 		"clsx": "^2.1.1",
@@ -28,8 +31,11 @@
 	"type": "module",
 	"dependencies": {
 		"@melt-ui/svelte": "^0.86.2",
+		"@vercel/node": "^5.0.2",
+		"axios": "^1.7.9",
 		"flowbite": "^2.5.2",
 		"flowbite-svelte": "^0.47.4",
-		"flowbite-svelte-icons": "^2.0.2"
+		"flowbite-svelte-icons": "^2.0.2",
+		"node-ical": "^0.20.1"
 	}
 }

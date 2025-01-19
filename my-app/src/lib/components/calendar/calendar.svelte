@@ -2,147 +2,55 @@
     export let timeframe: 'past' | 'future';
     import * as Card from "$lib/components/ui/card";
     import { onMount, onDestroy } from 'svelte';
+    import { calendarStore } from '$lib/stores/calendarStore';
 
     // Event card styles
+    interface Event {
+        title: string;
+        track: 'project' | 'research';
+        date: string;
+        time: string;
+        location: string;
+    }
+
     const trackStyles = {
         project: {
+            trackName: 'Project Track',
             cardBg: 'bg-emerald-50',
             textColor: 'text-emerald-500'
         },
         research: {
+            trackName: 'Research Track',
             cardBg: 'bg-indigo-100',
             textColor: 'text-indigo-500'
         }
     };
 
-    /*  Event data
-        Modify this to add and remove events
+    // How often the backend calendar data will be feteched to update the website calendar
+    const REFRESH_INTERVAL = 60 * 1000;
 
-        Field Formatting Info:
-        title - No special formatting
-        track - Must be a name from the event card styles in the trackStyles object above (i.e. project, research, etc.)
-        trackName - No special formatting
-        date - Must be in the format mm-dd-yyyy
-        time - Must be in the format (hour):(minute) - (hour):(minute) am/pm. I'll work on the edge case
-        location - No special formatting
-    */
-    const events = [
-        // Basic formats
-        {
-            title: 'Reactivity Test',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-17-2025',
-            time: '4:00 - 4:01 pm',  // Should not be "Happening Now" at 6pm
-            location: 'Location 1'
-        },
-        {
-            title: 'Basic PM-PM Format',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '8:00 - 9:00 pm',  // Should not be "Happening Now" at 6pm
-            location: 'Location 1'
-        },
-        {
-            title: 'Basic AM-PM Format',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '8:00 am - 5:00 pm',  // Should not be "Happening Now" at 6pm
-            location: 'Location 2'
-        },
+    // Subscribe to the calendar events store
+    $: events = $calendarStore;
 
-        // Edge Cases - Meridian Handling
-        {
-            title: 'No Start Meridian',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '8:00 - 9:00 pm',  // Should interpret as 8:00 PM
-            location: 'Location 3'
-        },
-        {
-            title: 'No Minutes',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '8 am - 9 pm',  // Should handle missing minutes
-            location: 'Location 4'
-        },
+    let refreshInterval: number;
+    let timeInterval: number;
 
-        // Time Crossing Cases
-        {
-            title: 'AM to PM Crossing',
-            track: 'research',
-            trackName: 'Research Track',
-            date: '01-16-2025',
-            time: '11:00 am - 2:00 pm',  // Should not be "Happening Now" at 6pm
-            location: 'Location 5'
-        },
-        {
-            title: 'Currently Happening',
-            track: 'research',
-            trackName: 'Research Track',
-            date: '01-16-2025',
-            time: '5:00 pm - 7:00 pm',  // Should be "Happening Now" at 6pm
-            location: 'Location 6'
-        },
-
-        // Format Variations
-        {
-            title: 'Compact Format',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '8am - 5pm',  // Should handle no spaces before meridian
-            location: 'Location 7'
-        },
-        {
-            title: 'Period Instead of Colon',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '8.00 am - 5.00 pm',  // Should handle periods instead of colons
-            location: 'Location 8'
-        },
-
-        // Noon/Midnight Cases
-        {
-            title: 'Noon Crossing',
-            track: 'research',
-            trackName: 'Research Track',
-            date: '01-16-2025',
-            time: '11:00 am - 1:00 pm',  // Tests noon crossing
-            location: 'Location 9'
-        },
-        {
-            title: '12 Hour Format Edge',
-            track: 'research',
-            trackName: 'Research Track',
-            date: '01-16-2025',
-            time: '12:00 pm - 1:00 pm',  // Tests proper handling of 12 PM
-            location: 'Location 10'
-        },
-
-        // Current Time Edge Cases
-        {
-            title: 'Just Before Current Time',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '5:45 pm - 6:15 pm',  // Should be "Happening Now" at 6pm
-            location: 'Location 11'
-        },
-        {
-            title: 'Spans Current Time',
-            track: 'project',
-            trackName: 'Project Track',
-            date: '01-16-2025',
-            time: '5:00 pm - 7:00 pm',  // Should be "Happening Now" at 6pm
-            location: 'Location 12'
+    onMount(async () => {
+        // Only fetch if not already initialized
+        if (!calendarStore.isInitialized()) {
+            await calendarStore.fetch();
         }
-    ];
+
+        // Set up automatic refresh
+        refreshInterval = window.setInterval(async () => {
+            await calendarStore.fetch();
+        }, REFRESH_INTERVAL);
+
+        // Set up time update
+        timeInterval = window.setInterval(() => {
+            currentTime = getCurrentEST();
+        }, 1000);
+    })
 
     // Gets current EST time
     function getCurrentEST(): Date {
@@ -222,6 +130,7 @@
 
     // Filter out events that aren't in the past or present/future depending on the timeframe variable
     $: filteredEvents = events.filter(event => {
+        console.log("Filtering")
         const eventStartDate = parseEventStartDate(event.date, event.time);
         const eventEndDate = parseEventEndDate(event.date, event.time);
 
@@ -342,7 +251,7 @@
           </span>
           <span>
             <h3 class="text-base font-semibold leading-7 {trackStyles[event.track].textColor}">
-              {event.trackName}
+              {trackStyles[event.track].trackName}
             </h3>
           </span>
         </div>
