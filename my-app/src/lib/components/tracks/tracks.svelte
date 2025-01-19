@@ -6,7 +6,7 @@
     import ResearchTrack from "$lib/components/tracks/research_track.svelte"
 </script>
 <div class="p-6">
-  <h2 class="text-3xl font-bold text-center mb-0">Tracks:</h2>
+  <h2 class="text-3xl font-bold text-center mb-0">Tracks</h2>
 </div>
 <div class="flex justify-center">
   <Accordion.Root class="m-1 max-w-3xl w-full" value="item-2">

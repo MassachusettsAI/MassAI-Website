@@ -7,7 +7,7 @@
   <div class="container mx-auto text-center relative z-10">
     <h1 class="text-4xl font-bold mb-4">About Us</h1>
     <p class="text-lg max-w-2xl mx-auto">
-      Welcome! We are MassAI, UMass's premier student organization for students passionate about machine learning and artificial intelligence. Whether you're interested in learning the fundamentals or eager to work on hands-on projects, this is the place for you! 
+      We are UMass Amherst's premier student organization for students passionate about machine learning and artificial intelligence. Whether you're interested in learning the fundamentals or eager to work on hands-on projects, this is the place for you! 
     </p>
   </div>
 </section>
