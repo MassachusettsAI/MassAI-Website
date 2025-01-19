@@ -1,9 +1,25 @@
 <script lang="ts">
     import { buttonVariants } from "$lib/components/ui/button";
 </script>
-<div class="text-lg text-center">
+<div class="text-lg text-center mb-3">
   Research is at the core of Machine Learning, and our paper reading group will give you the foundational knowledge necessary to run your own experiments.
   Our paper reading group meets every week and is open to newcomers at any time!
+</div>
+<div class="flex justify-center">
+  <div class="mr-4">
+    <a href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing" class={buttonVariants({ variant: "outline" })}>
+      <div class="text-lg">
+        This Week's Paper
+      </div>
+    </a>
+  </div>
+  <div class="ml-4">
+    <a href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing" class={buttonVariants({ variant: "outline" })}>
+      <div class="text-lg">
+        Milestone AI Papers
+      </div>
+    </a>
+  </div>
 </div>
 <ol class="relative m-4 border-s border-gray-200 dark:border-gray-700">
   <li class="mb-4 ms-6">
@@ -60,6 +76,3 @@
     </time>
   </li>
 </ol>
-<a href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing" class={buttonVariants({ variant: "outline" })}>
-  List of Milestone AI Papers
-</a>
