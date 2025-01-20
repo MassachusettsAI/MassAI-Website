@@ -7,7 +7,7 @@
     // Event card styles
     interface Event {
         title: string;
-        track: 'project' | 'research';
+        track: 'project' | 'research' | 'event';
         date: string;
         time: string;
         location: string;
@@ -23,6 +23,11 @@
             trackName: 'Research Track',
             cardBg: 'bg-indigo-100',
             textColor: 'text-indigo-500'
+        },
+        event: {
+          trackName: 'Event'.
+          cardBg: 'bg-red-100',
+          textColor: 'text-red-500'
         }
     };
 
