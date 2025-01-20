@@ -34,7 +34,7 @@
 </script>
 
 <div class="text-center my-12">
-    <h1 class="text-3xl font-bold">Leadership</h2>
+    <h1 class="text-3xl font-bold">Leadership</h1>
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
