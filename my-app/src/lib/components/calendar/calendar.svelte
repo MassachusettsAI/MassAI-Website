@@ -25,7 +25,7 @@
             textColor: 'text-indigo-500'
         },
         event: {
-          trackName: 'Event'.
+          trackName: 'Event',
           cardBg: 'bg-red-100',
           textColor: 'text-red-500'
         }

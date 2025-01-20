@@ -40,5 +40,15 @@
         <CompetitionTrack />
       </Accordion.Content>
     </Accordion.Item>
+    <Accordion.Item value="item-3">
+      <Accordion.Trigger class="text-2xl text-rose-500 w-full">
+        <div class="w-full flex items-center justify-center">
+          <span class="flex-1 text-center">Workshop Track</span>
+        </div>
+      </Accordion.Trigger>
+      <Accordion.Content>
+        <CompetitionTrack />
+      </Accordion.Content>
+    </Accordion.Item>
   </Accordion.Root>
 </div>
