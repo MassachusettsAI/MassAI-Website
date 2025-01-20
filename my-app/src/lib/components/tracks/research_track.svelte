@@ -3,20 +3,20 @@
 </script>
 <div class="text-lg text-center mb-3">
   Research is at the core of Machine Learning, and our paper reading group will give you the foundational knowledge necessary to run your own experiments.
-  Our paper reading group meets every week and is open to newcomers at any time!
+  The reading group meets every week and is open to newcomers at any time!
 </div>
 <div class="flex justify-center">
-  <div class="mr-4">
+  <div class="mr-5">
     <a href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing" class={buttonVariants({ variant: "outline" })}>
       <div class="text-lg">
         This Week's Paper
       </div>
     </a>
   </div>
-  <div class="ml-4">
-    <a href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing" class={buttonVariants({ variant: "outline" })}>
+  <div class="ml-5">
+    <a href="https://docs.google.com/spreadsheets/d/1IOpD45AzsHMJ_4i5vE1xt2t8s0ejw-KyQ4eBf-2xwZM/edit?gid=0#gid=0" class={buttonVariants({ variant: "outline" })}>
       <div class="text-lg">
-        Milestone AI Papers
+        Previous Papers
       </div>
     </a>
   </div>
