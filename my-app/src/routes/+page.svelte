@@ -6,7 +6,7 @@
   import Officers from "$lib/components/officers.svelte"
   import AboutUs from "$lib/components/about_us.svelte"
   import Backdrop from "$lib/components/backdrop.svelte"
-
+  import Lectures from "$lib/components/lectures.svelte"
 </script>
 
 <!-- Navigation Bar -->
@@ -63,6 +63,9 @@
   <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
   <!--put our socials/email here -->
 </section>
+
+<!-- Lecture Section -->
+<Lectures />
 
 
 
