@@ -34,6 +34,15 @@
   function toggleLecture(index) {
     openLecture = openLecture === index ? null : index;
   }
+
+  function getEmbedUrl(url) {
+    // If it's a watch URL, convert it to embed
+    if (url.includes('watch?v=')) {
+      const videoId = url.split('watch?v=')[1].split('&')[0];
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+    return url;
+  }
 </script>
 
 <style>
@@ -104,11 +113,17 @@
       <div class="lecture-title {openLecture === index ? 'open' : ''}" on:click={() => toggleLecture(index)}>{lecture.title}</div>
       <div class="lecture-content {openLecture === index ? 'open' : ''}">
         <div class="lecture-date">{lecture.date}</div>
-        <div class="lecture-video">
-          <a href={`https://www.youtube.com/watch?v=${lecture.videoUrl.split('/embed/')[1]}`} target="_blank" rel="noopener noreferrer">
-            <iframe title="{lecture.title}" width="560" height="315" src={lecture.videoUrl} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </a>
-        </div>
+          <div class="lecture-video">
+            <iframe
+                title={lecture.title}
+                width="560"
+                height="315"
+                src={getEmbedUrl(lecture.videoUrl)}
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+          </div>
         <div class="lecture-resources">
           <h3>Resources:</h3>
           {#each lecture.resources as resource}
