@@ -33,11 +33,11 @@ export async function GET() {
       .filter(event => event.type === 'VEVENT')
       .map(event => {
         const start = new Date(event.start);
-        const end = new Date(event.end);
+        const end = new Date(event.end)
 
         return {
           title: event.summary,
-          track: event.description?.toLowerCase().includes('research') ? 'research' : 'project',
+          track: event.description.toLowerCase(),
           date: formatDate(start),
           time: `${formatTime(start)} - ${formatTime(end)}`,
           location: event.location || 'No location specified'

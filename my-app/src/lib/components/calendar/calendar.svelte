@@ -7,7 +7,7 @@
     // Event card styles
     interface Event {
         title: string;
-        track: 'project' | 'research' | 'event';
+        track: string;
         date: string;
         time: string;
         location: string;
@@ -15,19 +15,29 @@
 
     const trackStyles = {
         project: {
-            trackName: 'Project Track',
+            trackName: 'Project',
             cardBg: 'bg-emerald-50',
             textColor: 'text-emerald-500'
         },
         research: {
-            trackName: 'Research Track',
+            trackName: 'Research',
             cardBg: 'bg-indigo-100',
             textColor: 'text-indigo-500'
         },
-        event: {
-          trackName: 'Event',
-          cardBg: 'bg-red-100',
-          textColor: 'text-red-500'
+        competition: {
+          trackName: 'Competition',
+          cardBg: 'bg-rose-100',
+          textColor: 'text-rose-500'
+        },
+        workshop: {
+            trackName: 'Workshop',
+            cardBg: 'bg-fuchsia-100',
+            textColor: 'text-fuchsia-500'
+        },
+        mislabeled: {
+            trackName: 'Mislabeled',
+            cardBg: 'bg-gray-100',
+            textColor: 'text-gray-500'
         }
     };
 
@@ -64,13 +74,6 @@
 
     // Add current time state
     $: currentTime = getCurrentEST();
-
-    onMount(() => {
-        // Update current time every second
-        setInterval(() => {
-            currentTime = getCurrentEST();
-        }, 1000);
-    });
 
     // Create a date with time set to start of event
     function parseEventStartDate(dateStr: string, timeStr: string): Date {
@@ -244,19 +247,23 @@
 
         return ""; // Return empty string if none of the above conditions are met
     }
+
+    function getTrack(track) {
+        return track in trackStyles ? track : "mislabeled"
+    }
 </script>
 
 <div class="p-6 text-base">
   {#each sortedEvents as event, index}
-    <div class="rounded-lg border border-gray-200 {trackStyles[event.track].cardBg} {index !== sortedEvents.length - 1 ? 'mb-8' : ''} transition-transform duration-200 hover:-translate-y-1">
+    <div class="rounded-lg border border-gray-200 {trackStyles[getTrack(event.track)].cardBg} {index !== sortedEvents.length - 1 ? 'mb-8' : ''} transition-transform duration-200 hover:-translate-y-1">
       <div class="p-6">
         <div class="flex justify-between gap-2">
           <span>
             <h3 class="text-xl font-semibold leading-7">{event.title}</h3>
           </span>
           <span>
-            <h3 class="text-base font-semibold leading-7 {trackStyles[event.track].textColor}">
-              {trackStyles[event.track].trackName}
+            <h3 class="text-base font-semibold leading-7 {trackStyles[getTrack(event.track)].textColor}">
+              {trackStyles[getTrack(event.track)].trackName}
             </h3>
           </span>
         </div>
