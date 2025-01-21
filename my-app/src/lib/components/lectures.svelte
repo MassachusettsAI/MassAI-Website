@@ -5,8 +5,7 @@
       date: "November 10, 2024",
       videoUrl: "https://www.youtube.com/watch?v=1-TvSgOuAH4&t=4s",
       resources: [
-        { name: "Lecture Slides", url: "https://example.com/lecture-slides" },
-        { name: "Related Article", url: "https://example.com/related-article" }
+        { name: "Lecture Slides", url: "https://docs.google.com/document/d/17SzkJD5bTLbTe5NuJjDG-teeIQsNhm0D_6l7NXUKrZc/edit?tab=t.0" },
       ]
     }, 
     {
@@ -14,8 +13,7 @@
       date: "November 10, 2024",
       videoUrl: "https://www.youtube.com/watch?v=dHa3Ju-QsDs&t=22s",
       resources: [
-        { name: "Lecture Slides", url: "https://example.com/lecture-slides" },
-        { name: "Related Article", url: "https://example.com/related-article" }
+        { name: "Lecture Slides", url: "https://docs.google.com/document/d/17SzkJD5bTLbTe5NuJjDG-teeIQsNhm0D_6l7NXUKrZc/edit?tab=t.0" },
       ]
     }, 
     {
