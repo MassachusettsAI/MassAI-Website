@@ -10,7 +10,15 @@
       We are UMass Amherst's premier student organization for students passionate about machine learning and artificial intelligence. Whether you're interested in learning the fundamentals or eager to work on hands-on projects, this is the place for you! 
     </p>
   </div>
+
 </section>
+  <div class="text-center my-0">
+  <h2 class="text-3xl font-bold">Contact Us:</h2>
+  <a href="https://linktr.ee/mass.ai" target="_blank" rel="noopener noreferrer" class="btn">
+    Visit Our Linktree
+  </a>
+</div>
+
 
 <style>
   .animate-gradient {
@@ -41,5 +49,20 @@
   .bg-gradient-section {
     position: relative;
     overflow: hidden;
+  }
+
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color:rgb(142, 2, 2);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color:rgb(79, 9, 2);
   }
 </style>

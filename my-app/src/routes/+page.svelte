@@ -25,7 +25,7 @@
       <li><a href="#about" class="hover:text-gray-800">About Us</a></li>
       <li><a href="#tracks" class="hover:text-gray-800">Tracks</a></li>
       <li><a href="#events" class="hover:text-gray-800">Events</a></li>
-      <li><a href="#contact" class="hover:text-gray-800">Contact</a></li>
+      <li><a href="#lectures" class="hover:text-gray-800">Resources</a></li>
     </ul>
   </div>
 </nav>
@@ -58,14 +58,10 @@
 </section>
 
 
-<!-- Contact Section -->
-<section id="contact" class="bg-gray-200 text-black py-16 px-8">
-  <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
-  <!--put our socials/email here -->
-</section>
-
 <!-- Lecture Section -->
-<Lectures />
+<section id="lectures" class="bg-gray-200 text-black py-16 px-8">
+  <Lectures />
+</section>
 
 
 
