@@ -138,7 +138,6 @@
 
     // Filter out events that aren't in the past or present/future depending on the timeframe variable
     $: filteredEvents = events.filter(event => {
-        console.log("Filtering")
         const eventStartDate = parseEventStartDate(event.date, event.time);
         const eventEndDate = parseEventEndDate(event.date, event.time);
 
@@ -248,8 +247,16 @@
         return ""; // Return empty string if none of the above conditions are met
     }
 
-    function getTrack(track) {
-        return track in trackStyles ? track : "mislabeled"
+    function isLink(str: string): boolean {
+        console.log(str)
+        return str.substring(0, 4) === 'http';
+    }
+
+    function getTrack(track: string): string {
+        if (isLink(track)) {
+            return "research";
+        }
+        return track in trackStyles ? track : "mislabeled";
     }
 </script>
 
@@ -290,6 +297,14 @@
                 <span class="text-md">{event.location}</span>
               </div>
             </div>
+            {#if isLink(event.track)}
+              <div class="mt-2">
+                <a href="{event.track}" target="_blank" class="text-sky-500 hover:underline font-semibold">
+                  Paper
+                  <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
+                </a>
+              </div>
+            {/if}
           </span>
           <span class="flex">
             <div class="mt-auto">
