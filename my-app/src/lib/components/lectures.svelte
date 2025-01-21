@@ -3,7 +3,7 @@
     {
       title: "Introduction to Reinforcement Learning",
       date: "November 10, 2024",
-      videoUrl: "https://www.youtube.com/watch?v=dHa3Ju-QsDs&t=22s",
+      videoUrl: "https://www.youtube.com/watch?v=1-TvSgOuAH4&t=4s",
       resources: [
         { name: "Lecture Slides", url: "https://example.com/lecture-slides" },
         { name: "Related Article", url: "https://example.com/related-article" }
@@ -21,7 +21,7 @@
     {
       title: "Introduction to Imitation Learning",
       date: "November 10, 2024",
-      videoUrl: "https://www.youtube.com/watch?v=dHa3Ju-QsDs&t=22s",
+      videoUrl: "https://www.youtube.com/watch?v=07Y9xnwNk1w&t=8s",
       resources: [
         { name: "Lecture Slides", url: "https://example.com/lecture-slides" },
         { name: "Related Article", url: "https://example.com/related-article" }
