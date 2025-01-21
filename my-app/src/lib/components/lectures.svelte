@@ -21,7 +21,7 @@
       date: "November 10, 2024",
       videoUrl: "https://www.youtube.com/watch?v=07Y9xnwNk1w&t=8s",
       resources: [
-        { name: "Lecture Slides", url: "https://example.com/lecture-slides" },
+        { name: "Lecture Slides", url: "https://docs.google.com/presentation/d/1ZNcRx5P04liyKTB39_RAylJONGmkrs-Fof2Xs8hOjac/edit?usp=sharing" },
         { name: "Related Article", url: "https://example.com/related-article" }
       ]
     }
