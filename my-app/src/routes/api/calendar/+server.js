@@ -37,7 +37,7 @@ export async function GET() {
 
         return {
           title: event.summary,
-          track: event.description.includes('href="') ? event.description.split('href="')[1].split('"')[0] : event.description.toLowerCase(),
+          track: event.description.includes('href="') ? event.descriptiont.split('href="')[1].split('"')[0] : event.description.toLowerCase(),
           date: formatDate(start),
           time: `${formatTime(start)} - ${formatTime(end)}`,
           location: event.location || 'TBD'

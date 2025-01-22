@@ -3,19 +3,19 @@
         {
             name: " Donald Winkelman",
             title: "President of Outreach",
-            picture: "/images/donnie.png",
+            picture: "/images/donnie_winkelman.jpg",
             bio: "Hi y’all, I’m Donnie! I’m in the MS CS program at UMass and delving further into deep learning! I’ve done some research in interpretability and safety (exploring how models think) alongside experiments with computer vision models. I enjoy reading papers in medicine and ML and want to specialize in medical AI to increase diagnostic accuracy, surgical accuracy, enable the development of more complex laboratory-made proteins, and much more. Look forward to meeting y'all!"
         },
         {
             name: " Aryaman Tepal",
             title: "President of Education",
-            picture: "/images/aryaman.png",
-            bio: "Coming soon..."
+            picture: "/images/aryaman_tepal.jpg",
+            bio: "Hi, I'm Aryaman! I'm a sophomore Honors CS + Applied Math major, and I'm looking forward to being the president of education this semester! I've worked on some research in Hyperspectral Image Clustering and Trustworthy AI / ML research. I really love soccer, so I'm currently exploring geometric DL to figure out how Barcelona can concede less goals. That said, I enjoy the math & algorithm side of things quite a bit, so I enjoy working on any applications of ML in real-life! Very excited for this upcoming semester!"
         },
         {
             name: "Niko Lorantos",
             title: "Vice President of Education",
-            picture: "/images/niko.jpg",
+            picture: "/images/niko_lorantos.jpg",
             bio: "Niko Lorantos is an honors student studying computational mathematics and minoring in philosophy. He is interested in all things AI, from industry trends to niche research topics. He is currently involved in artificial life research at Amherst College."
         },
         {
@@ -27,8 +27,14 @@
         {
             name: "Adriana Caraeni",
             title: "Events Coordinator / Lecturer",
-            picture: "/images/adriana.jpg",
+            picture: "/images/adriana_caraeni.jpg",
             bio: "Honors Dual Degree in CS + Math plus Business Minor. I like rollerblading, biking, dancing, skiiing,  ..."
+        },
+        {
+            name: "Trung Dang",
+            title: "Lecturer",
+            picture: "/images/trung_dang.jpg",
+            bio: "Hi, I'm Trung, a senior CS & Math major and Physics minor at UMass Amherst. I am currently a member of DARoS lab researching Reinforcement Learning for robotics. I am particularly interested in self-supervised learning and hierarchical reinforcement learning. Additionally, I am a part-time trader and a quant wanna-be, so if you have any profitable alpha, spill the tea 😉."
         }
     ];
 </script>
