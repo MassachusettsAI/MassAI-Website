@@ -2,7 +2,7 @@ import { writable } from 'svelte/store';
 
 export interface Event {
     title: string;
-    track: 'project' | 'research';
+    track: string;
     date: string;
     time: string;
     location: string;
