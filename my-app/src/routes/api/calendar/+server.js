@@ -4,15 +4,17 @@ const { async: icalAsync } = pkg;
 import { json } from '@sveltejs/kit';
 
 function formatDate(date) {
-  const month = (date.getMonth() + 1).toString().padStart(2, '0');
-  const day = date.getDate().toString().padStart(2, '0');
-  const year = date.getFullYear();
+  const estDate = new Date(date.toLocaleString("en-US", {timeZone: "America/New_York"}));
+  const month = (estDate.getMonth() + 1).toString().padStart(2, '0');
+  const day = estDate.getDate().toString().padStart(2, '0');
+  const year = estDate.getFullYear();
   return `${month}-${day}-${year}`;
 }
 
 function formatTime(date) {
-  let hours = date.getHours();
-  const minutes = date.getMinutes().toString().padStart(2, '0');
+  const estDate = new Date(date.toLocaleString("en-US", {timeZone: "America/New_York"}));
+  let hours = estDate.getHours();
+  const minutes = estDate.getMinutes().toString().padStart(2, '0');
   const meridian = hours >= 12 ? 'pm' : 'am';
 
   if (hours > 12) hours -= 12;
