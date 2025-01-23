@@ -1,24 +1,16 @@
 <script lang="ts">
-    import { buttonVariants } from "$lib/components/ui/button";
+    import {Button, buttonVariants} from "$lib/components/ui/button";
 </script>
 <div class="text-lg text-center mb-3">
   Research is at the core of Machine Learning, and our paper reading group will give you the foundational knowledge necessary to run your own experiments.
   The reading group meets every week and is open to newcomers at any time!
 </div>
 <div class="flex justify-center">
-  <div class="mr-5">
-    <a href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing" class={buttonVariants({ variant: "outline" })}>
-      <div class="text-lg">
-        This Week's Paper
-      </div>
-    </a>
-  </div>
-  <div class="ml-5">
-    <a href="https://docs.google.com/spreadsheets/d/1IOpD45AzsHMJ_4i5vE1xt2t8s0ejw-KyQ4eBf-2xwZM/edit?gid=0#gid=0" class={buttonVariants({ variant: "outline" })}>
-      <div class="text-lg">
-        Previous Papers
-      </div>
-    </a>
+  <div>
+    <Button class="bg-indigo-500 hover:bg-indigo-600" target="_block" href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing">
+      Previous Papers
+      <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
+    </Button>
   </div>
 </div>
 <ol class="relative m-4 border-s border-gray-200 dark:border-gray-700">

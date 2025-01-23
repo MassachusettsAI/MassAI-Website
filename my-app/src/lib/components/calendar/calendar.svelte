@@ -3,6 +3,7 @@
     import * as Card from "$lib/components/ui/card";
     import { onMount, onDestroy } from 'svelte';
     import { calendarStore } from '$lib/stores/calendarStore';
+    import { Button } from "$lib/components/ui/button";
 
     // Event card styles
     interface Event {
@@ -299,10 +300,10 @@
             </div>
             {#if isLink(event.track)}
               <div class="mt-2">
-                <a href="{event.track}" target="_blank" class="text-sky-500 hover:underline font-semibold">
-                  Paper
+                <Button class="bg-indigo-500 hover:bg-indigo-600" target="_block" href="{event.track}">
+                  This Week's Paper
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
-                </a>
+                </Button>
               </div>
             {/if}
           </span>

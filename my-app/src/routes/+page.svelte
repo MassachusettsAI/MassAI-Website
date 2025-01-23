@@ -7,6 +7,7 @@
   import AboutUs from "$lib/components/about_us.svelte"
   import Backdrop from "$lib/components/backdrop.svelte"
   import Lectures from "$lib/components/lectures.svelte"
+  import * as Menubar from "$lib/components/ui/menubar";
 </script>
 
 <!-- Navigation Bar -->
@@ -16,20 +17,57 @@
     <div class="flex items-center">
       <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20 mr-2" />
       <span class="fira text-3xl bg-gradient-to-l from-umass-black to-umass-maroon bg-clip-text text-transparent font-bold">
-        {@html '{MassAI}'}
-      </span>
+       {@html '{MassAI}'}
+     </span>
     </div>
-    
+
     <!-- Navigation Links -->
-    <ul class="flex space-x-6">
-      <li><a href="#about" class="hover:text-gray-800">About Us</a></li>
-      <li><a href="#tracks" class="hover:text-gray-800">Tracks</a></li>
-      <li><a href="#events" class="hover:text-gray-800">Events</a></li>
-      <li><a href="#lectures" class="hover:text-gray-800">Resources</a></li>
-    </ul>
+    <div class="hidden md:block">
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-gray-800">About Us</a></li>
+        <li><a href="#tracks" class="hover:text-gray-800">Tracks</a></li>
+        <li><a href="#events" class="hover:text-gray-800">Events</a></li>
+        <li><a href="#lectures" class="hover:text-gray-800">Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="md:hidden">
+      <Menubar.Root class="bg-transparent">
+        <Menubar.Menu>
+          <Menubar.Trigger>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </Menubar.Trigger>
+          <Menubar.Content class="bg-red-800 text-white">
+            <a href="#about">
+              <Menubar.Item>
+                About Us
+              </Menubar.Item>
+            </a>
+              <a href="#tracks">
+                <Menubar.Item>
+                  Tracks
+                </Menubar.Item>
+              </a>
+              <a href="#events">
+                <Menubar.Item>
+                  Events
+                </Menubar.Item>
+              </a>
+              <a href="#lectures">
+                <Menubar.Item>
+                  Resources
+                </Menubar.Item>
+              </a>
+          </Menubar.Content>
+        </Menubar.Menu>
+      </Menubar.Root>
+    </div>
   </div>
 </nav>
-
 
 <Backdrop />
 
@@ -67,13 +105,13 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
-  
+
   .fira {
     font-family: 'Fira Mono', sans-serif;
     font-weight: 700;
     font-style: normal;
   }
-  
+
   .animate-gradient {
     background-size: 300% 300%;
     animation: gradientAnimation 8s ease infinite;
@@ -120,5 +158,11 @@
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
+  }
+
+  :global(.custom-trigger) {
+    background-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
   }
 </style>
