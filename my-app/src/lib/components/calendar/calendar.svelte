@@ -17,28 +17,28 @@
     const trackStyles = {
         project: {
             trackName: 'Project',
-            cardBg: 'bg-emerald-50',
-            textColor: 'text-emerald-500'
+            cardBg: 'bg-emerald-100',
+            textColor: 'text-emerald-600'
         },
         research: {
             trackName: 'Research',
             cardBg: 'bg-indigo-100',
-            textColor: 'text-indigo-500'
+            textColor: 'text-indigo-600'
         },
         competition: {
           trackName: 'Competition',
           cardBg: 'bg-rose-100',
-          textColor: 'text-rose-500'
+          textColor: 'text-rose-600'
         },
         workshop: {
             trackName: 'Workshop',
             cardBg: 'bg-fuchsia-100',
-            textColor: 'text-fuchsia-500'
+            textColor: 'text-fuchsia-600'
         },
         mislabeled: {
             trackName: 'Mislabeled',
             cardBg: 'bg-gray-100',
-            textColor: 'text-gray-500'
+            textColor: 'text-gray-600'
         }
     };
 
@@ -300,7 +300,7 @@
             </div>
             {#if isLink(event.track)}
               <div class="mt-2">
-                <Button class="bg-indigo-500 hover:bg-indigo-600" target="_block" href="{event.track}">
+                <Button class="bg-indigo-500 hover:bg-indigo-600 dark:text-white" target="_block" href="{event.track}">
                   This Week's Paper
                   <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
                 </Button>
