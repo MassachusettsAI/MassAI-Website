@@ -6,10 +6,10 @@
     import ResearchTrack from "$lib/components/tracks/research_track.svelte"
     import WorkshopTrack from "$lib/components/tracks/workshop_track.svelte"
 </script>
-<div class="p-6">
-  <h1 class="text-3xl font-bold text-center mb-0">Tracks</h1>
+<div class="mb-6">
+  <h1 class="text-3xl font-bold text-center dark:text-white">Tracks</h1>
 </div>
-<div class="flex justify-center">
+<div class="dark:text-white flex justify-center">
   <Accordion.Root class="m-1 max-w-3xl w-full" value="item-1">
     <Accordion.Item value="item-1">
       <Accordion.Trigger class="text-2xl text-emerald-500 w-full">

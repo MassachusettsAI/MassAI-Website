@@ -83,7 +83,7 @@
 <ModeWatcher></ModeWatcher>
 
 <!-- About Us Section -->
-<section id="about" class="bg-slate-300 bg-gradient-section text-white py-24 px-8 relative overflow-hidden dark:bg-slate-1025">
+<section id="about" class="bg-slate-300 bg-gradient-section text-white py-24 px-8 relative overflow-hidden dark:bg-slate-925">
   <div class="sm:mx-14">
     <AboutUs />
   </div>
@@ -91,14 +91,14 @@
 </section>
 
 <!-- Tracks Section -->
-<section id="tracks" class="bg-slate-225 text-black py-0 px-8 dark:bg-slate-1000">
+<section id="tracks" class="bg-slate-225 text-black py-24 px-8 dark:bg-slate-950">
   <div class="sm:mx-14">
     <Tracks />
   </div>
 </section>
 
 <!-- Events Section -->
-<section id="events" class="bg-slate-150 text-black py-0 px-8 dark:bg-slate-975">
+<section id="events" class="bg-slate-150 text-black py-24 px-8 dark:bg-slate-975">
   <div class="sm:mx-14">
     <CurEvents />
   </div>
@@ -107,7 +107,7 @@
 
 
 <!-- Officers Section -->
-<section id="officers" class="bg-slate-75 py-1 px-8 dark:bg-slate-950">
+<section id="officers" class="bg-slate-75 py-24 px-8 dark:bg-slate-1000">
   <div class="sm:mx-14">
   <div>
     <Officers />
@@ -117,7 +117,7 @@
 
 
 <!-- Lecture Section -->
-<section id="lectures" class="text-black py-16 px-8 dark:bg-slate-925">
+<section id="lectures" class="text-black py-24 px-8 dark:bg-slate-1025">
   <div class="sm:mx-14">
     <Lectures />
   </div>

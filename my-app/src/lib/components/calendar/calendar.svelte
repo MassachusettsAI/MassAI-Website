@@ -261,7 +261,7 @@
     }
 </script>
 
-<div class="p-6 text-base">
+<div class="p-6 text-base dark:text-black">
   {#each sortedEvents as event, index}
     <div class="rounded-lg border border-gray-200 {trackStyles[getTrack(event.track)].cardBg} {index !== sortedEvents.length - 1 ? 'mb-8' : ''} transition-transform duration-200 hover:-translate-y-1">
       <div class="p-6">
