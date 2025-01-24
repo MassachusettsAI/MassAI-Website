@@ -3,7 +3,7 @@
 </script>
 <div class="text-lg text-center mb-3">
   Research is at the core of Machine Learning, and our paper reading group will give you the foundational knowledge necessary to run your own experiments.
-  The reading group meets every week and is open to newcomers at any time!
+  The reading group meets every week and is open to newcomers at any time! :O
 </div>
 <div class="flex justify-center">
   <div>
@@ -61,7 +61,7 @@
       </svg>
     </span>
     <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-      Propose and Vote On Next Week's Paper
+      Vote On Next Week's Paper
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400 dark:text-gray-500">
       10 Minutes
