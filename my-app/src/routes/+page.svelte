@@ -8,30 +8,43 @@
   import Backdrop from "$lib/components/backdrop.svelte"
   import Lectures from "$lib/components/lectures.svelte"
   import * as Menubar from "$lib/components/ui/menubar";
+  import { ModeWatcher } from "mode-watcher";
+  import Sun from "lucide-svelte/icons/sun";
+  import Moon from "lucide-svelte/icons/moon";
+  import { toggleMode } from "mode-watcher";
+  import { Button } from "$lib/components/ui/button";
 </script>
 
+<ModeWatcher />
+
 <!-- Navigation Bar -->
-<nav class="bg-gradient-to-r from-red-500 to-red-700 text-white fixed top-0 left-0 w-full z-20">
-  <div class="container mx-auto flex items-center justify-between py-4 px-8">
+<nav class="bg-gradient-to-r from-red-500 to-red-700 text-white fixed top-0 left-0 w-full z-20 shadow-lg">
+  <div class="w-full flex items-center justify-between py-4 px-6 lg:px-12">
     <!-- Logo -->
-    <div class="flex items-center">
-      <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20 mr-2" />
+    <div class="flex items-center space-x-3">
+      <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20" />
       <span class="fira text-3xl bg-gradient-to-l from-umass-black to-umass-maroon bg-clip-text text-transparent font-bold">
-       {@html '{MassAI}'}
-     </span>
+        {@html '{MassAI}'}
+      </span>
     </div>
 
     <!-- Navigation Links -->
-    <div class="hidden md:block">
-      <ul class="flex space-x-6">
-        <li><a href="#about" class="hover:text-gray-800">About Us</a></li>
-        <li><a href="#tracks" class="hover:text-gray-800">Tracks</a></li>
-        <li><a href="#events" class="hover:text-gray-800">Events</a></li>
-        <li><a href="#lectures" class="hover:text-gray-800">Resources</a></li>
+    <div class="hidden mlg:block">
+      <ul class="flex items-center space-x-8">
+        <li><a href="#about" class="hover:text-gray-200 transition-colors">About Us</a></li>
+        <li><a href="#tracks" class="hover:text-gray-200 transition-colors">Tracks</a></li>
+        <li><a href="#events" class="hover:text-gray-200 transition-colors">Events</a></li>
+        <li><a href="#lectures" class="hover:text-gray-200 transition-colors">Resources</a></li>
+        <li>
+          <a href="https://linktr.ee/mass.ai" target="_blank" rel="noopener noreferrer" class="bg-white text-red-600 px-4 py-2 rounded-lg shadow-md font-medium hover:bg-red-100 transition-all">
+            Join Us!
+          </a>
+        </li>
       </ul>
     </div>
-
-    <div class="md:hidden">
+    <div class="flex mlg:hidden">
+    <div >
+      <!-- Mobile Nav -->
       <Menubar.Root class="bg-transparent">
         <Menubar.Menu>
           <Menubar.Trigger>
@@ -62,15 +75,41 @@
                   Resources
                 </Menubar.Item>
               </a>
+              <a href="https://linktr.ee/mass.ai">
+                <Menubar.Item>
+                  Visit Our Linktree
+                </Menubar.Item>
+              </a>
           </Menubar.Content>
         </Menubar.Menu>
       </Menubar.Root>
+    </div>
+      <Button class="ml-2" on:click={toggleMode} variant="outline" size="icon">
+        <Sun
+            class="h-[1.2rem] w-[1.2rem] text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+        />
+        <Moon
+            class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+        />
+        <span class="sr-only">Toggle theme</span>
+      </Button>
+    </div>
+    <div class="hidden mlg:block">
+      <Button class="ml-2" on:click={toggleMode} variant="outline" size="icon">
+        <Sun
+            class="h-[1.2rem] w-[1.2rem] text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+        />
+        <Moon
+            class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+        />
+        <span class="sr-only">Toggle theme</span>
+      </Button>
     </div>
   </div>
 </nav>
 
 <Backdrop />
-
+<ModeWatcher></ModeWatcher>
 
 <!-- About Us Section -->
 <section id="about" class="bg-gradient-section text-white py-24 px-8 relative overflow-hidden">

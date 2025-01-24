@@ -12,12 +12,6 @@
   </div>
 
 </section>
-  <div class="text-center my-0">
-  <h2 class="text-3xl font-bold">Contact Us:</h2>
-  <a href="https://linktr.ee/mass.ai" target="_blank" rel="noopener noreferrer" class="btn">
-    Visit Our Linktree
-  </a>
-</div>
 
 
 <style>

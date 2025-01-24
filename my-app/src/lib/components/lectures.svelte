@@ -22,7 +22,6 @@
       videoUrl: "https://www.youtube.com/watch?v=07Y9xnwNk1w&t=8s",
       resources: [
         { name: "Lecture Slides", url: "https://docs.google.com/presentation/d/1ZNcRx5P04liyKTB39_RAylJONGmkrs-Fof2Xs8hOjac/edit?usp=sharing" },
-        { name: "Related Article", url: "https://example.com/related-article" }
       ]
     }
   ];
@@ -111,16 +110,16 @@
       <div class="lecture-title {openLecture === index ? 'open' : ''}" on:click={() => toggleLecture(index)}>{lecture.title}</div>
       <div class="lecture-content {openLecture === index ? 'open' : ''}">
         <div class="lecture-date">{lecture.date}</div>
-          <div class="lecture-video">
-            <iframe
-                title={lecture.title}
-                width="560"
-                height="315"
-                src={getEmbedUrl(lecture.videoUrl)}
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-            ></iframe>
+          <div class="lecture-video relative w-full h-[500px] md:h-[315px]">
+            <div class="w-full h-full">
+              <iframe
+                  title={lecture.title}
+                  class="w-full h-full"
+                  src={getEmbedUrl(lecture.videoUrl)}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+              ></iframe>
+            </div>
           </div>
         <div class="lecture-resources">
           <h3>Resources:</h3>
