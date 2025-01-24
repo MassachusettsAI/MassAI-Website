@@ -45,7 +45,7 @@
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {#each eBoardMembers as member}
-        <div class="bg-white shadow-lg rounded-lg p-6">
+        <div class="bg-white shadow-lg rounded-lg p-6 transition-transform duration-200 hover:-translate-y-1">
             <div class="flex flex-col items-center">
                 <img src={member.picture} alt={member.name} class="w-24 h-24 rounded-full mb-4" />
                 <h2 class="text-xl font-bold">{member.name}</h2>

@@ -100,7 +100,7 @@
   });
 </script>
 
-<section id="hero" class="relative h-screen bg-black text-white flex items-center justify-center">
+<section id="hero" class="relative h-screen flex items-center justify-center">
   <!-- animation -->
   <div class="absolute inset-0 overflow-hidden">
     <canvas id="mlCanvas" class="w-full h-full"></canvas>
@@ -123,9 +123,24 @@
     overflow-x: hidden;
   }
 
+  :root {
+    color-scheme: light dark;
+  }
+
   #hero {
-    background: radial-gradient(circle, rgba(35,35,35,1) 0%, rgba(20,20,20,1) 100%);
-    overflow: hidden;
+    background: radial-gradient(circle,
+    oklch(0.899 0.017 254.201) 0%,
+    oklch(0.786 0.031 254.841) 100%
+    ) !important;
+    color: black;
+  }
+
+  :root.dark #hero {
+    background: radial-gradient(circle,
+    oklch(0.168 0.042 265.225) 0%,
+    oklch(0.129 0.042 264.695) 100%
+    ) !important;
+    color: white;
   }
 
   #mlCanvas {

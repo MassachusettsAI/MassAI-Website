@@ -18,33 +18,40 @@
 <ModeWatcher />
 
 <!-- Navigation Bar -->
-<nav class="bg-gradient-to-r from-red-500 to-red-700 text-white fixed top-0 left-0 w-full z-20 shadow-lg">
+<nav class="bg-gradient-to-r from-red-500 to-red-700 text-white fixed top-0 left-0 w-full z-20 shadow-lg dark:from-red-800 dark:to-red-950">
   <div class="w-full flex items-center justify-between py-4 px-6 lg:px-12">
     <!-- Logo -->
     <div class="flex items-center space-x-3">
-      <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20" />
-      <span class="fira text-3xl bg-gradient-to-l from-umass-black to-umass-maroon bg-clip-text text-transparent font-bold">
-        {@html '{MassAI}'}
-      </span>
+      <a href="#hero" class="flex items-center space-x-3">
+        <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20" />
+        <span class="fira text-3xl bg-gradient-to-l from-umass-black to-umass-maroon bg-clip-text text-transparent font-bold">
+          {@html '{MassAI}'}
+        </span>
+      </a>
     </div>
 
-    <!-- Navigation Links -->
-    <div class="hidden mlg:block">
-      <ul class="flex items-center space-x-8">
-        <li><a href="#about" class="hover:text-gray-200 transition-colors">About Us</a></li>
-        <li><a href="#tracks" class="hover:text-gray-200 transition-colors">Tracks</a></li>
-        <li><a href="#events" class="hover:text-gray-200 transition-colors">Events</a></li>
-        <li><a href="#lectures" class="hover:text-gray-200 transition-colors">Resources</a></li>
+    <!-- Desktop Navigation -->
+    <div class="hidden mlg:flex items-center">
+      <ul class="flex items-center">
+        <li><a href="#about" class="block px-4 py-6 hover:text-slate-400 transition-colors">About Us</a></li>
+        <li><a href="#tracks" class="block px-4 py-6 hover:text-slate-400 transition-colors">Tracks</a></li>
+        <li><a href="#events" class="block px-4 py-6 hover:text-slate-400 transition-colors">Events</a></li>
+        <li><a href="#lectures" class="block px-4 py-6 hover:text-slate-400 transition-colors">Resources</a></li>
         <li>
-          <a href="https://linktr.ee/mass.ai" target="_blank" rel="noopener noreferrer" class="bg-white text-red-600 px-4 py-2 rounded-lg shadow-md font-medium hover:bg-red-100 transition-all">
+          <Button href="https://linktr.ee/mass.ai" target="_blank" rel="noopener noreferrer" class="bg-rose-900 dark:bg-rose-300 text-slate-100 dark:text-rose-950 hover:text-white dark:hover:text-rose-850 dark:hover:bg-rose-200 px-4 py-2 rounded-lg shadow-md font-medium hover:bg-rose-800 transition-all mx-4">
             Join Us!
-          </a>
+          </Button>
         </li>
       </ul>
+      <Button class="ml-4" on:click={toggleMode} variant="outline" size="icon">
+        <Sun class="h-[1.2rem] w-[1.2rem] text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"/>
+        <Moon class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"/>
+        <span class="sr-only">Toggle theme</span>
+      </Button>
     </div>
+
+    <!-- Mobile Navigation -->
     <div class="flex mlg:hidden">
-    <div >
-      <!-- Mobile Nav -->
       <Menubar.Root class="bg-transparent">
         <Menubar.Menu>
           <Menubar.Trigger>
@@ -55,53 +62,17 @@
             </svg>
           </Menubar.Trigger>
           <Menubar.Content class="bg-red-800 text-white">
-            <a href="#about">
-              <Menubar.Item>
-                About Us
-              </Menubar.Item>
-            </a>
-              <a href="#tracks">
-                <Menubar.Item>
-                  Tracks
-                </Menubar.Item>
-              </a>
-              <a href="#events">
-                <Menubar.Item>
-                  Events
-                </Menubar.Item>
-              </a>
-              <a href="#lectures">
-                <Menubar.Item>
-                  Resources
-                </Menubar.Item>
-              </a>
-              <a href="https://linktr.ee/mass.ai" target="_blank">
-                <Menubar.Item>
-                  Join Us!
-                </Menubar.Item>
-              </a>
+            <a href="#about"><Menubar.Item>About Us</Menubar.Item></a>
+            <a href="#tracks"><Menubar.Item>Tracks</Menubar.Item></a>
+            <a href="#events"><Menubar.Item>Events</Menubar.Item></a>
+            <a href="#lectures"><Menubar.Item>Resources</Menubar.Item></a>
+            <a href="https://linktr.ee/mass.ai" target="_blank"><Menubar.Item>Join Us!</Menubar.Item></a>
           </Menubar.Content>
         </Menubar.Menu>
       </Menubar.Root>
-    </div>
       <Button class="ml-2" on:click={toggleMode} variant="outline" size="icon">
-        <Sun
-            class="h-[1.2rem] w-[1.2rem] text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-        />
-        <Moon
-            class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-        />
-        <span class="sr-only">Toggle theme</span>
-      </Button>
-    </div>
-    <div class="hidden mlg:block">
-      <Button class="ml-2" on:click={toggleMode} variant="outline" size="icon">
-        <Sun
-            class="h-[1.2rem] w-[1.2rem] text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-        />
-        <Moon
-            class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-        />
+        <Sun class="h-[1.2rem] w-[1.2rem] text-black rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"/>
+        <Moon class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"/>
         <span class="sr-only">Toggle theme</span>
       </Button>
     </div>
@@ -112,7 +83,7 @@
 <ModeWatcher></ModeWatcher>
 
 <!-- About Us Section -->
-<section id="about" class="bg-gradient-section text-white py-24 px-8 relative overflow-hidden">
+<section id="about" class="bg-slate-300 bg-gradient-section text-white py-24 px-8 relative overflow-hidden dark:bg-slate-1025">
   <div class="sm:mx-14">
     <AboutUs />
   </div>
@@ -120,14 +91,14 @@
 </section>
 
 <!-- Tracks Section -->
-<section id="tracks" class="bg-white text-black py-0 px-8">
+<section id="tracks" class="bg-slate-225 text-black py-0 px-8 dark:bg-slate-1000">
   <div class="sm:mx-14">
     <Tracks />
   </div>
 </section>
 
 <!-- Events Section -->
-<section id="events" class="bg-gray-100 text-black py-0 px-8">
+<section id="events" class="bg-slate-150 text-black py-0 px-8 dark:bg-slate-975">
   <div class="sm:mx-14">
     <CurEvents />
   </div>
@@ -136,16 +107,17 @@
 
 
 <!-- Officers Section -->
-<section id="officers" class="bg-gray-200 text-black py-1 px-8">
+<section id="officers" class="bg-slate-75 py-1 px-8 dark:bg-slate-950">
   <div class="sm:mx-14">
   <div>
     <Officers />
+  </div>
   </div>
 </section>
 
 
 <!-- Lecture Section -->
-<section id="lectures" class="bg-gray-200 text-black py-16 px-8">
+<section id="lectures" class="text-black py-16 px-8 dark:bg-slate-925">
   <div class="sm:mx-14">
     <Lectures />
   </div>
