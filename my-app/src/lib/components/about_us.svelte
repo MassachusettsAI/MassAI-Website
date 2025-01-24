@@ -45,18 +45,18 @@
     overflow: hidden;
   }
 
-    .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color:rgb(142, 2, 2);
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background-color:rgb(79, 9, 2);
-  }
+  /*   .btn { */
+  /*   display: inline-block; */
+  /*   padding: 10px 20px; */
+  /*   font-size: 1rem; */
+  /*   color: white; */
+  /*   background-color:rgb(142, 2, 2); */
+  /*   border: none; */
+  /*   border-radius: 5px; */
+  /*   text-decoration: none; */
+  /*   cursor: pointer; */
+  /* } */
+  /* .btn:hover { */
+  /*   background-color:rgb(79, 9, 2); */
+  /* } */
 </style>

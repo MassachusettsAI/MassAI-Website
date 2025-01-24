@@ -46,7 +46,6 @@
   .lecture-container {
     display: flex;
     flex-direction: column;
-    margin: 20px;
   }
   .lecture-item {
     margin-bottom: 15px;

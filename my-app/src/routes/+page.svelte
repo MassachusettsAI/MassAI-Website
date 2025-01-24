@@ -75,9 +75,9 @@
                   Resources
                 </Menubar.Item>
               </a>
-              <a href="https://linktr.ee/mass.ai">
+              <a href="https://linktr.ee/mass.ai" target="_blank">
                 <Menubar.Item>
-                  Visit Our Linktree
+                  Join Us!
                 </Menubar.Item>
               </a>
           </Menubar.Content>
@@ -113,31 +113,42 @@
 
 <!-- About Us Section -->
 <section id="about" class="bg-gradient-section text-white py-24 px-8 relative overflow-hidden">
-  <AboutUs />
+  <div class="sm:mx-14">
+    <AboutUs />
+  </div>
 
 </section>
 
 <!-- Tracks Section -->
 <section id="tracks" class="bg-white text-black py-0 px-8">
-  <Tracks />
+  <div class="sm:mx-14">
+    <Tracks />
+  </div>
 </section>
 
 <!-- Events Section -->
 <section id="events" class="bg-gray-100 text-black py-0 px-8">
-  <CurEvents />
+  <div class="sm:mx-14">
+    <CurEvents />
+  </div>
 <PrevEvents />
 </section>
 
 
 <!-- Officers Section -->
 <section id="officers" class="bg-gray-200 text-black py-1 px-8">
-  <Officers />
+  <div class="sm:mx-14">
+  <div>
+    <Officers />
+  </div>
 </section>
 
 
 <!-- Lecture Section -->
 <section id="lectures" class="bg-gray-200 text-black py-16 px-8">
-  <Lectures />
+  <div class="sm:mx-14">
+    <Lectures />
+  </div>
 </section>
 
 

@@ -4,7 +4,7 @@
   const calendarUrl = `https://calendar.google.com/calendar/render?cid=${encodeURIComponent('officers.mass.ai@gmail.com')}`;
 </script>
 <div class="flex justify-center">
-  <Card.Root class="bg-sky-50 m-14 max-w-3xl w-full">
+  <Card.Root class="bg-sky-50 my-14 max-w-3xl w-full">
     <Card.Header>
       <Card.Title class="flex items-center justify-center text-blue-600 text-2xl">Upcoming Events</Card.Title>
     </Card.Header>
