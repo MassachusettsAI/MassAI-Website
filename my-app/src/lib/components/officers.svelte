@@ -47,7 +47,7 @@
     {#each eBoardMembers as member}
         <div class="bg-white dark:bg-slate-900 shadow-lg rounded-lg p-6 transition-transform duration-200 hover:-translate-y-1">
             <div class="flex flex-col items-center">
-                <img src={member.picture} alt={member.name} class="w-24 h-24 rounded-full mb-4" />
+                <img src={member.picture} alt={member.name} class="w-auto h-24 rounded-full mb-4 object-contain max-w-none" />
                 <h2 class="text-xl font-bold">{member.name}</h2>
                 <h3 class="text-gray-600 dark:text-gray-400">{member.title}</h3>
                 <p class="text-center mt-4">{member.bio}</p>
