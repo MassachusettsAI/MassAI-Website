@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section class="bg-gradient-section text-white py-16 px-8 relative overflow-hidden">
+<section class="bg-gradient-section text-white py-16 sm:px-8 relative overflow-hidden">
   <div class="absolute inset-0 z-0 bg-gradient-to-r from-red-400 via-pink-700 to-red-900 animate-gradient move-gradient"></div>
 
   <div class="container mx-auto text-center relative z-10">

@@ -9,7 +9,7 @@
     <Accordion.Item value="item-1">
       <Accordion.Trigger class="text-2xl text-gray-700 w-full dark:text-gray-200">
         <div class="w-full flex items-center justify-center">
-          <span class="font-fraunces flex-1 text-center text-4xl dark:text-white">Past Events</span>
+          <span class="font-fraunces flex-1 text-center text-5xl dark:text-white">Past Events</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
