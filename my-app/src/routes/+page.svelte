@@ -19,12 +19,12 @@
 
 <!-- Navigation Bar -->
 <nav class="bg-gradient-to-r from-red-500 to-red-700 text-white fixed top-0 left-0 w-full z-20 shadow-lg dark:from-red-800 dark:to-red-950">
-  <div class="w-full flex items-center justify-between py-4 px-6 lg:px-12">
+  <div class="w-full flex items-center justify-between px-4 lg:px-12">
     <!-- Logo -->
-    <div class="flex items-center space-x-3">
-      <a href="#hero" class="flex items-center space-x-3">
+    <div class="flex items-center">
+      <a href="#top" class="flex items-center">
         <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20" />
-        <span class="fira text-3xl bg-gradient-to-l from-umass-black to-umass-maroon bg-clip-text text-transparent font-bold">
+        <span class="fira text-3xl bg-gradient-to-l from-umass-black dark:from-umass-black-light to-umass-maroon dark:to-umass-maroon-light bg-clip-text text-transparent font-bold">
           {@html '{MassAI}'}
         </span>
       </a>
@@ -33,12 +33,12 @@
     <!-- Desktop Navigation -->
     <div class="hidden mlg:flex items-center">
       <ul class="flex items-center">
-        <li><a href="#about" class="block px-4 py-6 hover:text-slate-400 transition-colors">About Us</a></li>
-        <li><a href="#tracks" class="block px-4 py-6 hover:text-slate-400 transition-colors">Tracks</a></li>
-        <li><a href="#events" class="block px-4 py-6 hover:text-slate-400 transition-colors">Events</a></li>
-        <li><a href="#lectures" class="block px-4 py-6 hover:text-slate-400 transition-colors">Resources</a></li>
+        <li><a href="#about" class="block px-4 py-6 hover:text-slate-400 transition-colors text-lg">About Us</a></li>
+        <li><a href="#tracks" class="block px-4 py-6 hover:text-slate-400 transition-colors text-lg">Tracks</a></li>
+        <li><a href="#events" class="block px-4 py-6 hover:text-slate-400 transition-colors text-lg">Events</a></li>
+        <li><a href="#lectures" class="block px-4 py-6 hover:text-slate-400 transition-colors text-lg">Resources</a></li>
         <li>
-          <Button href="https://linktr.ee/mass.ai" target="_blank" rel="noopener noreferrer" class="bg-rose-900 dark:bg-rose-300 text-slate-100 dark:text-rose-950 hover:text-white dark:hover:text-rose-850 dark:hover:bg-rose-200 px-4 py-2 rounded-lg shadow-md font-medium hover:bg-rose-800 transition-all mx-4">
+          <Button href="https://linktr.ee/mass.ai" target="_blank" rel="noopener noreferrer" class="bg-rose-900 dark:bg-rose-300 text-slate-100 dark:text-rose-950 hover:text-white dark:hover:text-rose-850 dark:hover:bg-rose-200 px-4 py-2 rounded-lg shadow-md font-medium hover:bg-rose-800 transition-all mx-4 text-lg">
             Join Us!
           </Button>
         </li>
@@ -51,7 +51,7 @@
     </div>
 
     <!-- Mobile Navigation -->
-    <div class="flex mlg:hidden">
+    <div class="flex mlg:hidden my-4">
       <Menubar.Root class="bg-transparent">
         <Menubar.Menu>
           <Menubar.Trigger>
@@ -78,6 +78,10 @@
     </div>
   </div>
 </nav>
+
+<a href="https://tinyurl.com/4t2ssszu" target="_blank" class="block text-center h-20 bg-cyan-600 text-lg text-white hover:bg-cyan-700 transition-colors flex items-center justify-center font-medium p-4 shadow-md mt-16 pb-1">
+  Eboard Applications are Open! Click to Apply!
+</a>
 
 <Backdrop />
 <ModeWatcher></ModeWatcher>
@@ -127,6 +131,15 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+  .fraunces {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "SOFT" 0, "WONK" 0;
+  }
 
   .fira {
     font-family: 'Fira Mono', sans-serif;

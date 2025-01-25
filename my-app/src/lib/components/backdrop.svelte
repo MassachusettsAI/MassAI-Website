@@ -88,7 +88,7 @@
     });
 </script>
 
-<section id="hero" class="relative h-screen bg-black text-white flex items-center justify-center">
+<section id="hero" class="relative h-[calc(100vh-4rem)] bg-black text-white flex items-center justify-center">
     <!-- animation -->
     <div class="absolute inset-0 overflow-hidden">
       <canvas id="mlCanvas" class="w-full h-full"></canvas>

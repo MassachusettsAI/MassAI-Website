@@ -7,7 +7,7 @@
 </div>
 <div class="flex justify-center">
   <div>
-    <Button class="text-white bg-indigo-500 hover:bg-indigo-600" target="_block" href="https://docs.google.com/spreadsheets/d/1t-JOOxt4bM4WuBwo-UWLwPoVCHLf3QvYGoXmCTTtsdk/edit?usp=sharing">
+    <Button class="text-white bg-indigo-500 hover:bg-indigo-600" target="_block" href="https://docs.google.com/spreadsheets/d/1IOpD45AzsHMJ_4i5vE1xt2t8s0ejw-KyQ4eBf-2xwZM/edit?usp=sharing">
       Previous Papers
       <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
     </Button>

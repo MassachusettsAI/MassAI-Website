@@ -14,7 +14,7 @@ const config: Config = {
 		screens: {
 			"sm": "640px",
 			"md": "768px",
-			'mlg': '840px',
+			'mlg': '860px',
 			"lg": "1024px",
 			"xl": "1280px",
 			"2xl": "1536px"
@@ -23,6 +23,8 @@ const config: Config = {
 			colors: {
 				'umass-maroon': '#881c1c',
 				'umass-black': '#212721',
+				'umass-maroon-light': '#ff7a7a',
+				'umass-black-light': '#808880',
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
