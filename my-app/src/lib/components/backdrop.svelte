@@ -104,7 +104,7 @@
 
     <!-- message -->
     <div class="relative z-10 text-center">
-      <h1 class="font-fraunces text-7xl font-extrabold mb-4">Welcome to the Future of AI/ML</h1>
+      <h1 class="font-fraunces font-extrabold text-7xl mb-4">Welcome to the Future of AI/ML</h1>
       <p class="text-xl max-w-lg mx-auto">
         Dive into the world of artificial intelligence and machine learning at UMass Amherst!
       </p>

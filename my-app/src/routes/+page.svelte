@@ -26,7 +26,7 @@
       <a href="#top" class="flex items-center">
         <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20" />
 <!--        <span class="font-fraunces text-3xl bg-gradient-to-l from-umass-black dark:from-umass-black-light to-umass-maroon dark:to-umass-maroon-light bg-clip-text text-transparent font-bold">-->
-        <span class="font-fraunces text-3xl text-white bg-clip-text text-transparent font-bold">
+        <span class="font-fraunces font-extrabold text-3xl text-white bg-clip-text text-transparent">
           {@html 'MassAI'}
         </span>
       </a>

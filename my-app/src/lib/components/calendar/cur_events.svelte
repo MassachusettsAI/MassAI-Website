@@ -6,7 +6,7 @@
 <div class="flex justify-center">
   <Card.Root class="bg-sky-200 mb-14 max-w-3xl w-full dark:bg-sky-950">
     <Card.Header>
-      <Card.Title class="font-fraunces flex items-center justify-center text-blue-600 dark:text-blue-400 text-5xl">Upcoming Events</Card.Title>
+      <Card.Title class="font-fraunces font-extrabold flex items-center justify-center text-blue-600 dark:text-blue-400 text-5xl">Upcoming Events</Card.Title>
     </Card.Header>
     <Calendar timeframe="future" />
     <div class="flex justify-center mb-6">
