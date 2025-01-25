@@ -24,7 +24,8 @@
     <div class="flex items-center">
       <a href="#top" class="flex items-center">
         <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20" />
-        <span class="font-fraunces text-3xl bg-gradient-to-l from-umass-black dark:from-umass-black-light to-umass-maroon dark:to-umass-maroon-light bg-clip-text text-transparent font-bold">
+<!--        <span class="font-fraunces text-3xl bg-gradient-to-l from-umass-black dark:from-umass-black-light to-umass-maroon dark:to-umass-maroon-light bg-clip-text text-transparent font-bold">-->
+        <span class="font-fraunces text-3xl text-white bg-clip-text text-transparent font-bold">
           {@html '{MassAI}'}
         </span>
       </a>
@@ -61,7 +62,7 @@
               <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
           </Menubar.Trigger>
-          <Menubar.Content class="font-fraunces bg-red-800 text-white">
+          <Menubar.Content class="mt-16 font-fraunces bg-red-800 text-white">
             <a href="#about"><Menubar.Item>About Us</Menubar.Item></a>
             <a href="#tracks"><Menubar.Item>Tracks</Menubar.Item></a>
             <a href="#events"><Menubar.Item>Events</Menubar.Item></a>

@@ -5,7 +5,8 @@
 </script>
 
 <div class="flex justify-center sm:mx-14">
-  <Accordion.Root class="max-w-3xl w-full">
+  <Accordion.Root class="max-w-3xl w-full [&>*]:border-b-2 [&>*]:border-gray-600 dark:[&>*]:border-gray-300">
+<!--  <Accordion.Root class="max-w-3xl w-full">-->
     <Accordion.Item value="item-1">
       <Accordion.Trigger class="text-2xl text-gray-700 w-full dark:text-gray-200">
         <div class="w-full flex items-center justify-center">

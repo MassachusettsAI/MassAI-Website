@@ -41,7 +41,8 @@
   <h2 class="font-fraunces text-5xl mb-10 font-bold dark:text-white">Lectures</h2>
 </div>
 
-<Accordion.Root class="dark:text-white max-w-3xl mx-auto">
+<Accordion.Root class="dark:text-white max-w-3xl mx-auto [&>*]:border-b-2 [&>*]:border-gray-600 dark:[&>*]:border-gray-300">
+<!--<Accordion.Root class="dark:text-white max-w-3xl mx-auto">-->
   {#each lectures as lecture}
     <Accordion.Item value={lecture.title}>
       <Accordion.Trigger class="dark:text-white text-xl">
