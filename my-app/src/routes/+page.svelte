@@ -62,7 +62,7 @@
               <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
           </Menubar.Trigger>
-          <Menubar.Content class="font-fraunces bg-red-800 text-white fixed">
+          <Menubar.Content class="font-fraunces bg-red-800 text-white fixed top-8 right-4">
             <a href="#about"><Menubar.Item>About Us</Menubar.Item></a>
             <a href="#tracks"><Menubar.Item>Tracks</Menubar.Item></a>
             <a href="#events"><Menubar.Item>Events</Menubar.Item></a>
