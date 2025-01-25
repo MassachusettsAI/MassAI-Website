@@ -38,7 +38,7 @@
 </script>
 
 <div class="text-center">
-  <h2 class="text-3xl mb-10 font-bold dark:text-white">Lectures:</h2>
+  <h2 class="font-fraunces text-4xl mb-10 font-bold dark:text-white">Lectures</h2>
 </div>
 
 <Accordion.Root class="dark:text-white max-w-3xl mx-auto">

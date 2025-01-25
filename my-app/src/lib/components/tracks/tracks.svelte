@@ -7,7 +7,7 @@
     import WorkshopTrack from "$lib/components/tracks/workshop_track.svelte"
 </script>
 <div class="mb-6">
-  <h1 class="text-3xl font-bold text-center dark:text-white">Tracks</h1>
+  <h1 class="font-fraunces text-5xl font-bold text-center dark:text-white">Tracks</h1>
 </div>
 <div class="dark:text-white flex justify-center">
   <Accordion.Root class="m-1 max-w-3xl w-full" value="item-1">

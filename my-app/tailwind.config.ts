@@ -14,7 +14,7 @@ const config: Config = {
 		screens: {
 			"sm": "640px",
 			"md": "768px",
-			'mlg': '860px',
+			'mlg': '830px',
 			"lg": "1024px",
 			"xl": "1280px",
 			"2xl": "1536px"
@@ -108,8 +108,11 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
+				fraunces: [
+					'Fraunces',
+					'serif'
+				],
 				sans: [
-					'"Inter"',
 					'system-ui',
 					'-apple-system',
 					'BlinkMacSystemFont',
