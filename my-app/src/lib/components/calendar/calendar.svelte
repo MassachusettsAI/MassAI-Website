@@ -65,7 +65,7 @@
         // Set up time update
         timeInterval = window.setInterval(() => {
             currentTime = getCurrentEST();
-        }, 1000);
+        }, 60000);
     })
 
     // Gets current EST time
