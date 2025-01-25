@@ -29,12 +29,19 @@
             }
         }
         function getRandomRedColor() {
+            // const colors = [
+            //     '#FF0000',
+            //     '#DC143C',
+            //     '#B22222',
+            //     '#8B0000',
+            //     '#FF4500'
+            // ];
             const colors = [
-                '#FF0000',
-                '#DC143C',
-                '#B22222',
-                '#8B0000',
-                '#FF4500'
+                '#00FFFF',  // Bright Cyan
+                '#008B8B',  // Dark Cyan
+                '#00BFFF',  // Deep Sky Blue
+                '#1E90FF',  // Dodger Blue
+                '#00F5FF'   // Vivid Cyan
             ];
             return colors[Math.floor(Math.random() * colors.length)];
         }
@@ -46,7 +53,8 @@
                     const distance = Math.sqrt(dx * dx + dy * dy);
                     if (distance < maxDistance) {
                         const opacity = 1 - (distance / maxDistance);
-                        ctx.strokeStyle = `rgba(255, 0, 0, ${opacity * 0.2})`; // Red lines with opacity
+                        // ctx.strokeStyle = `rgba(255, 0, 0, ${opacity * 0.2})`; // Red lines with opacity
+                        ctx.strokeStyle = `rgba(0, 255, 255, ${opacity * 0.2})`; // Cyan lines
                         ctx.lineWidth = 1;
                         ctx.beginPath();
                         ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
