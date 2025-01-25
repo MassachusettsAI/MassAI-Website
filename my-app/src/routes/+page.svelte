@@ -24,7 +24,7 @@
     <div class="flex items-center">
       <a href="#top" class="flex items-center">
         <img src="images/ml-logo-border.png" alt="ml-logo" class="h-15 w-20" />
-        <span class="fira text-3xl bg-gradient-to-l from-umass-black dark:from-umass-black-light to-umass-maroon dark:to-umass-maroon-light bg-clip-text text-transparent font-bold">
+        <span class="fraunces text-3xl bg-gradient-to-l from-umass-black dark:from-umass-black-light to-umass-maroon dark:to-umass-maroon-light bg-clip-text text-transparent font-bold">
           {@html '{MassAI}'}
         </span>
       </a>
