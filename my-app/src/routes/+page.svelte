@@ -13,6 +13,7 @@
   import Moon from "lucide-svelte/icons/moon";
   import { toggleMode } from "mode-watcher";
   import { Button } from "$lib/components/ui/button";
+  let showBanner = true;
 </script>
 
 <ModeWatcher />
@@ -80,9 +81,16 @@
   </div>
 </nav>
 
-<a href="https://tinyurl.com/4t2ssszu" target="_blank" class="block text-center h-20 bg-cyan-600 text-lg text-white hover:bg-cyan-700 transition-colors flex items-center justify-center font-medium p-4 shadow-md mt-16 pb-1">
-  Eboard Applications are Open! Click to Apply!
-</a>
+<div class="relative">
+  {#if showBanner}
+    <a href="https://tinyurl.com/4t2ssszu" target="_blank" class="block text-center h-20 bg-cyan-600 text-lg text-white hover:bg-cyan-700 transition-colors flex items-center justify-center font-medium p-4 shadow-md mt-16 pb-1">
+      Eboard Applications are Open! Click to Apply!
+      <button on:click|preventDefault={() => showBanner = false} class="absolute right-4 top-1/2 -translate-y-1/2 text-2xl">&times;</button>
+    </a>
+  {:else}
+    <div class="mt-16"></div>
+  {/if}
+</div>
 
 <Backdrop />
 <ModeWatcher></ModeWatcher>
