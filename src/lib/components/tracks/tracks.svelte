@@ -25,7 +25,7 @@
     <Accordion.Item value="item-2">
       <Accordion.Trigger class="text-2xl text-indigo-500 w-full">
         <div class="w-full flex items-center justify-center">
-          <span class="flex-1 text-center">Research</span>
+          <span class="flex-1 text-center">Reading Group</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
