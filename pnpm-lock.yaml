@@ -51,6 +51,9 @@ importers:
       '@types/google.accounts':
         specifier: ^0.0.15
         version: 0.0.15
+      '@vercel/analytics':
+        specifier: ^1.4.1
+        version: 1.4.1(@sveltejs/kit@2.16.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.19.0)(vite@5.4.11(@types/node@16.18.11)))(svelte@5.19.0)(vite@5.4.11(@types/node@16.18.11)))(svelte@5.19.0)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.5.1)
@@ -674,6 +677,32 @@ packages:
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
+
+  '@vercel/analytics@1.4.1':
+    resolution: {integrity: sha512-ekpL4ReX2TH3LnrRZTUKjHHNpNy9S1I7QmS+g/RQXoSUQ8ienzosuX7T9djZ/s8zPhBx1mpHP/Rw5875N+zQIQ==}
+    peerDependencies:
+      '@remix-run/react': ^2
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@remix-run/react':
+        optional: true
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   '@vercel/build-utils@9.0.1':
     resolution: {integrity: sha512-pG/izEqA0AGyqQj6QBfGoTOKU9FPG18sYw9qpncEq00uA+J4Ly4e8ssNbENsXtnXqkMjeoS3c5ncR3jT0bOyiA==}
@@ -2289,6 +2318,11 @@ snapshots:
   '@types/node@16.18.11': {}
 
   '@types/resolve@1.20.2': {}
+
+  '@vercel/analytics@1.4.1(@sveltejs/kit@2.16.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.19.0)(vite@5.4.11(@types/node@16.18.11)))(svelte@5.19.0)(vite@5.4.11(@types/node@16.18.11)))(svelte@5.19.0)':
+    optionalDependencies:
+      '@sveltejs/kit': 2.16.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.19.0)(vite@5.4.11(@types/node@16.18.11)))(svelte@5.19.0)(vite@5.4.11(@types/node@16.18.11))
+      svelte: 5.19.0
 
   '@vercel/build-utils@9.0.1': {}
 
