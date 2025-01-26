@@ -15,7 +15,7 @@
     <Accordion.Item value="item-1">
       <Accordion.Trigger class="text-2xl text-emerald-500 w-full">
         <div class="w-full flex items-center justify-center">
-          <span class="flex-1 text-center">Project Track</span>
+          <span class="flex-1 text-center">Projects</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
@@ -25,7 +25,7 @@
     <Accordion.Item value="item-2">
       <Accordion.Trigger class="text-2xl text-indigo-500 w-full">
         <div class="w-full flex items-center justify-center">
-          <span class="flex-1 text-center">Research Track</span>
+          <span class="flex-1 text-center">Research</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
@@ -35,7 +35,7 @@
     <Accordion.Item value="item-3">
       <Accordion.Trigger class="text-2xl text-fuchsia-500 w-full">
         <div class="w-full flex items-center justify-center">
-          <span class="flex-1 text-center">Workshop Track</span>
+          <span class="flex-1 text-center">Workshops</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
@@ -45,7 +45,7 @@
     <Accordion.Item value="item-4">
       <Accordion.Trigger class="text-2xl text-rose-500 w-full">
         <div class="w-full flex items-center justify-center">
-          <span class="flex-1 text-center">Competition Track</span>
+          <span class="flex-1 text-center">Competitions</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
