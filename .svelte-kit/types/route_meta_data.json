@@ -1,6 +1,0 @@
-{
-	"/": [],
-	"/api/calendar": [
-		"src/routes/api/calendar/+server.js"
-	]
-}
