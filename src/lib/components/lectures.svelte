@@ -16,6 +16,7 @@
             videoUrl: "https://www.youtube.com/watch?v=dHa3Ju-QsDs&t=22s",
             resources: [
                 { name: "Lecture Slides", url: "https://docs.google.com/document/d/17SzkJD5bTLbTe5NuJjDG-teeIQsNhm0D_6l7NXUKrZc/edit?tab=t.0" },
+                { name: "Google Colab", url: "https://colab.research.google.com/drive/1yuzuty_aUSq1pTBUzssUvEF5u6jN4o2h" },
             ]
         },
         {
