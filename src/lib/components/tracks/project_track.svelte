@@ -1,5 +1,7 @@
 <div class="text-lg text-center">
-  Collaborate with friends and fellow students on a self-led project in AI. Present your findings to research and industry experts at our end-of-semester poster session :>
+  Collaborate with friends and fellow students on a self-led or club-led project in AI. Present your findings to research and industry experts at our end-of-semester poster session :>
+  Self-led projects are chosen by groups of students, we'll help match you to students with similar interests during the first meeting. Teams will be finalized during the second meeting. You'll receive mentorship from MassAI, but you have full freedom to lead the project.
+  Club-led projects are chosen by groups of students and the club. They are led by a project lead on the E-Board. We'll match you to club-led projects in the first meeting and finalize teams in the second meeting.
 </div>
 <ol class="ml-5 relative m-4 border-s border-gray-400 dark:border-gray-700">
   <li class="mb-4 ms-6">
