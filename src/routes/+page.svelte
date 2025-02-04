@@ -19,7 +19,7 @@
 <!--      <button on:click|preventDefault={() => showBanner = false} class="absolute right-4 top-1/2 -translate-y-1/2 text-2xl">&times;</button>-->
 <!--    </a>-->
 <!--  {:else}-->
-<!--    <div class="mt-16"></div>-->
+    <div class="mt-16"></div>
 <!--  {/if}-->
 <!--</div>-->
 
