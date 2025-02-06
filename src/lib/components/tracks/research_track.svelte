@@ -1,11 +1,11 @@
 <script lang="ts">
     import {Button, buttonVariants} from "$lib/components/ui/button";
 </script>
-<div class="text-lg text-center mb-3">
+<div class="text-lg text-center">
   Research is at the core of Machine Learning, and our paper reading group will give you the foundational knowledge necessary to run your own experiments.
   The reading group meets every week and is open to newcomers at any time! :O
 </div>
-<div class="flex justify-center">
+<div class="flex justify-center mt-3">
   <div>
     <Button class="text-white bg-indigo-500 hover:bg-indigo-600" target="_block" href="https://docs.google.com/spreadsheets/d/1IOpD45AzsHMJ_4i5vE1xt2t8s0ejw-KyQ4eBf-2xwZM/edit?usp=sharing">
       Previous Papers

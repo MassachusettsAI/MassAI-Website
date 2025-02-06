@@ -1,3 +1,7 @@
+<script>
+  import {Button, buttonVariants} from "$lib/components/ui/button";
+</script>
+
 <div class="text-lg text-center whitespace-pre-line">
   Collaborate with friends and fellow students on a self-led or club-led project in AI. Present your findings to research and industry experts at our end-of-semester poster session :>
 
@@ -6,6 +10,14 @@
   Club-led projects are chosen both by groups of students and the club. They are led by a project lead on the E-Board. We'll match you to club-led projects in the first meeting and finalize teams in the second meeting.
 
   You (or your team) may complete the project ahead of schedule. Attending the MassAI conference is not required but encouraged so you can show off your work!
+</div>
+<div class="flex justify-center mt-3">
+  <div>
+    <Button class="text-white bg-emerald-500 hover:bg-emerald-600" target="_block" href="https://forms.gle/NC8Gzybf7bWefoaq8">
+      Build a Project with MassAI!
+      <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
+    </Button>
+  </div>
 </div>
 <ol class="ml-5 relative m-4 border-s border-gray-400 dark:border-gray-700">
   <li class="mb-4 ms-6">
