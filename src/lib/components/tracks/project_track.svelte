@@ -4,6 +4,8 @@
   Self-led projects are solo or led by groups of students. If you need teammates, we'll help match you to students with similar interests during the first meeting. Teams and solo projects will be finalized during the second meeting. You'll receive mentorship from MassAI, but you have full freedom to lead your project.
 
   Club-led projects are chosen both by groups of students and the club. They are led by a project lead on the E-Board. We'll match you to club-led projects in the first meeting and finalize teams in the second meeting.
+
+  You (or your team) may complete the project ahead of schedule. Attending the MassAI conference is not required but encouraged so you can show off your work!
 </div>
 <ol class="ml-5 relative m-4 border-s border-gray-400 dark:border-gray-700">
   <li class="mb-4 ms-6">
