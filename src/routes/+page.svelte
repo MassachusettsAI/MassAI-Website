@@ -7,7 +7,7 @@
   import AboutUs from "$lib/components/about_us.svelte";
   import Backdrop from "$lib/components/backdrop.svelte";
   import Lectures from "$lib/components/lectures.svelte";
-  let showBanner = true;
+  let showBanner = false;
 </script>
 
 <Navbar />
