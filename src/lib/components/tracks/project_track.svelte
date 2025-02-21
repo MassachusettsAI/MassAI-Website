@@ -11,14 +11,14 @@
 
   You (or your team) may complete the project ahead of schedule. Attending the MassAI conference is not required but encouraged so you can show off your work!
 </div>
-<div class="flex justify-center mt-3">
-  <div>
-    <Button class="text-white bg-emerald-500 hover:bg-emerald-600" target="_block" href="https://forms.gle/NC8Gzybf7bWefoaq8">
-      Build a Project with MassAI!
-      <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
-    </Button>
-  </div>
-</div>
+<!--<div class="flex justify-center mt-3">-->
+<!--  <div>-->
+<!--    <Button class="text-white bg-emerald-500 hover:bg-emerald-600" target="_block" href="https://forms.gle/NC8Gzybf7bWefoaq8">-->
+<!--      Build a Project with MassAI!-->
+<!--      <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>-->
+<!--    </Button>-->
+<!--  </div>-->
+<!--</div>-->
 <ol class="ml-5 relative m-4 border-s border-gray-400 dark:border-gray-700">
   <li class="mb-4 ms-6">
     <span class="absolute flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full -start-3 ring-8 ring-white dark:ring-slate-800 dark:bg-emerald-200">
