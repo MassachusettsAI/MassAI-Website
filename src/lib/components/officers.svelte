@@ -35,6 +35,36 @@
             title: "Lecturer",
             picture: "/images/trung_dang.jpg",
             bio: "Hi, I'm Trung, a senior CS & Math major and Physics minor at UMass Amherst. I am currently a member of DARoS lab researching Reinforcement Learning for robotics. I am particularly interested in self-supervised learning and hierarchical reinforcement learning. Additionally, I am a part-time trader and a quant wanna-be, so if you have any profitable alpha, spill the tea 😉."
+        },
+        {
+            name: "Nathan Wolf",
+            title: "Events Coordinator",
+            picture: "/images/ml-logo-border.jpeg",
+            bio: ""
+        },
+        {
+            name: "Mark Iyer",
+            title: "Events Coordinator",
+            picture: "/images/ml-logo-border.jpeg",
+            bio: ""
+        },
+        {
+            name: "Rehan Taneja",
+            title: "Project Lead",
+            picture: "/images/ml-logo-border.jpeg",
+            bio: "Hey,I'm Rehan! I'm an AI enthusiast, part-time model tuner and full-time overfitter. When I'm not making machines learn, I'm probably debugging why they won’t. Passionate about building cool AI projects, optimizing hyperparameters, and pretending my code worked on the first try. If you see me staring at my screen it's definitely not because I'm confused(send snacks)."
+        },
+        {
+            name: "Aryaman Goenka",
+            title: "Project Lead",
+            picture: "/images/ml-logo-border.jpeg",
+            bio: "Hi, I’m Aryaman Goenka! I’m a curious and driven Computer Science freshman at UMass Amherst, passionate about building tech that makes an impact. Whether it’s crafting AI-driven apps, designing neural network tools, or diving into hackathons, I thrive at the intersection of creativity and problem-solving. I love experimenting, learning, and collaborating on projects that push boundaries. Let’s innovate, build, and make cool things happen together!"
+        },
+        {
+            name: "Eric Nunes",
+            title: "Project Lead",
+            picture: "/images/ml-logo-border.jpeg",
+            bio: "Howdy, I'm Eric! Originally from Austin, TX, I'm a first-year grad student in the MSCS program after having graduated from Texas A&M with my Bachelor's in Spring 2024, and I'm excited to serve as a project lead this semester! Outside of computer science, my other interests are in hiking and music (you can also find me active on WMUA-FM). Looking forward to an amazing semester with y'all!"
         }
     ];
 </script>
