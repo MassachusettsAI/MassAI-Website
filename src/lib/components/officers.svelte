@@ -65,6 +65,12 @@
             title: "Project Lead",
             picture: "/images/ml-logo-border.jpeg",
             bio: "Howdy, I'm Eric! Originally from Austin, TX, I'm a first-year grad student in the MSCS program after having graduated from Texas A&M with my Bachelor's in Spring 2024, and I'm excited to serve as a project lead this semester! Outside of computer science, my other interests are in hiking and music (you can also find me active on WMUA-FM). Looking forward to an amazing semester with y'all!"
+        },
+        {
+            name: "Jonathan Liu",
+            title: "Marketing Coordinator",
+            picture: "/images/jonathan_liu.jpg",
+            bio: "Hey everyone, I’m Jonathan! I’m a freshman CS major with an interest in AI/ML, particularly natural language processing and computer vision. I’m excited to use AI to solve real-world problems in the future. I’m also looking forward to serving as a MassAI marketing coordinator this semester and can’t wait to meet you all!"
         }
     ];
 </script>
