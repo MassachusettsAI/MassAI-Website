@@ -69,22 +69,22 @@
       Experiment Progress Check-In + First Model Charts Due
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">
-      Thursday, March 6, 2025
+      Thursday, March 20, 2025
     </time>
   </li>
-  <li class="mb-4 ms-6">
-    <span class="absolute flex items-center justify-center w-6 h-6 bg-orange-100 rounded-full -start-3 ring-8 ring-white dark:ring-slate-800 dark:bg-orange-200">
-      <svg class="w-5 h-5 text-orange-400 dark:text-orange-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12.8638 3.49613C12.6846 3.18891 12.3557 3 12 3s-.6846.18891-.8638.49613l-3.49998 6c-.18042.30929-.1817.69147-.00336 1.00197S8.14193 11 8.5 11h7c.3581 0 .6888-.1914.8671-.5019.1784-.3105.1771-.69268-.0033-1.00197l-3.5-6ZM4 13c-.55228 0-1 .4477-1 1v6c0 .5523.44772 1 1 1h6c.5523 0 1-.4477 1-1v-6c0-.5523-.4477-1-1-1H4Zm12.5-1c-2.4853 0-4.5 2.0147-4.5 4.5s2.0147 4.5 4.5 4.5 4.5-2.0147 4.5-4.5-2.0147-4.5-4.5-4.5Z"/>
-      </svg>
-    </span>
-    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-      MVP Due
-    </h3>
-    <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">
-      Thursday, March 27, 2025
-    </time>
-  </li>
+<!--  <li class="mb-4 ms-6">-->
+<!--    <span class="absolute flex items-center justify-center w-6 h-6 bg-orange-100 rounded-full -start-3 ring-8 ring-white dark:ring-slate-800 dark:bg-orange-200">-->
+<!--      <svg class="w-5 h-5 text-orange-400 dark:text-orange-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">-->
+<!--        <path d="M12.8638 3.49613C12.6846 3.18891 12.3557 3 12 3s-.6846.18891-.8638.49613l-3.49998 6c-.18042.30929-.1817.69147-.00336 1.00197S8.14193 11 8.5 11h7c.3581 0 .6888-.1914.8671-.5019.1784-.3105.1771-.69268-.0033-1.00197l-3.5-6ZM4 13c-.55228 0-1 .4477-1 1v6c0 .5523.44772 1 1 1h6c.5523 0 1-.4477 1-1v-6c0-.5523-.4477-1-1-1H4Zm12.5-1c-2.4853 0-4.5 2.0147-4.5 4.5s2.0147 4.5 4.5 4.5 4.5-2.0147 4.5-4.5-2.0147-4.5-4.5-4.5Z"/>-->
+<!--      </svg>-->
+<!--    </span>-->
+<!--    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">-->
+<!--      MVP Due-->
+<!--    </h3>-->
+<!--    <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">-->
+<!--      Thursday, March 27, 2025-->
+<!--    </time>-->
+<!--  </li>-->
   <li class="mb-4 ms-6">
     <span class="absolute flex items-center justify-center w-6 h-6 bg-rose-100 rounded-full -start-3 ring-8 ring-white dark:ring-slate-800 dark:bg-rose-200">
       <svg class="w-5 h-5 text-rose-600 dark:text-rose-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -92,25 +92,25 @@
       </svg>
     </span>
     <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-      Midway Presentation!
-    </h3>
-    <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">
-      Thursday, April 3, 2025
-    </time>
-  </li>
-  <li class="mb-4 ms-6">
-    <span class="absolute flex items-center justify-center w-6 h-6 bg-yellow-100 rounded-full -start-3 ring-8 ring-white dark:ring-slate-800 dark:bg-yellow-100">
-      <svg class="w-5 h-5 text-amber-400 dark:text-amber-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-        <path d="m13.001 19.927 2.896 1.773c1.52.93 3.405-.442 2.992-2.179l-1.06-4.452 3.468-2.978c1.353-1.162.633-3.382-1.142-3.525L15.603 8.2l-1.754-4.226A1.973 1.973 0 0 0 13 3v16.927ZM10.999 3c-.36.205-.663.53-.848.974L8.397 8.2l-4.552.366c-1.775.143-2.495 2.363-1.142 3.525l3.468 2.978-1.06 4.452c-.413 1.737 1.472 3.11 2.992 2.178l2.896-1.773V3Z"/>
-      </svg>
-    </span>
-    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-      Poster Rough Draft Due
+      Progress Showcase!
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">
       Thursday, April 17, 2025
     </time>
   </li>
+<!--  <li class="mb-4 ms-6">-->
+<!--    <span class="absolute flex items-center justify-center w-6 h-6 bg-yellow-100 rounded-full -start-3 ring-8 ring-white dark:ring-slate-800 dark:bg-yellow-100">-->
+<!--      <svg class="w-5 h-5 text-amber-400 dark:text-amber-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">-->
+<!--        <path d="m13.001 19.927 2.896 1.773c1.52.93 3.405-.442 2.992-2.179l-1.06-4.452 3.468-2.978c1.353-1.162.633-3.382-1.142-3.525L15.603 8.2l-1.754-4.226A1.973 1.973 0 0 0 13 3v16.927ZM10.999 3c-.36.205-.663.53-.848.974L8.397 8.2l-4.552.366c-1.775.143-2.495 2.363-1.142 3.525l3.468 2.978-1.06 4.452c-.413 1.737 1.472 3.11 2.992 2.178l2.896-1.773V3Z"/>-->
+<!--      </svg>-->
+<!--    </span>-->
+<!--    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">-->
+<!--      MVP Deliverable Due-->
+<!--    </h3>-->
+<!--    <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">-->
+<!--      Thursday, April 17, 2025-->
+<!--    </time>-->
+<!--  </li>-->
   <li class="mb-4 ms-6">
     <span class="absolute flex items-center justify-center w-6 h-6 bg-orange-100 rounded-full -start-3 ring-8 ring-white dark:ring-slate-800 dark:bg-orange-200">
       <svg class="w-5 h-5 text-orange-400 dark:text-orange-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -118,7 +118,7 @@
       </svg>
     </span>
     <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-      Poster Final Review
+      MVP Deliverable Due
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">
       Thursday, May 1, 2025
@@ -131,7 +131,7 @@
       </svg>
     </span>
     <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-      MassAI Conference (Poster Presentation)!!
+      MassAI Conference (Demo/Research Presentation)!!
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400">
       Thursday, May 8, 2025
