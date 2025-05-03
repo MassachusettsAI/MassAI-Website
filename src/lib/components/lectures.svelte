@@ -26,7 +26,29 @@
             resources: [
                 { name: "Lecture Slides", url: "https://docs.google.com/presentation/d/1ZNcRx5P04liyKTB39_RAylJONGmkrs-Fof2Xs8hOjac/edit?usp=sharing" },
             ]
+        },
+        {
+            title: "Neural Networks",
+            date: "October 20, 2024",
+            resources: [
+                { name: "Lecture Slides", url: "https://docs.google.com/presentation/d/1kpWqDDNQ3mwsyamMgjVBqBbyXhBujRQoWL4Kbe12QrU/edit?usp=sharing" },
+            ]
+        },
+        {
+            title: "Linear Regression",
+            date: "Sept 15, 2024",
+            resources: [
+                { name: "Lecture Slides", url: "https://docs.google.com/presentation/d/11aCbIRESe8AFEdSRV7NR3MSYzFPR7VOrAtpt1UBbD3k/edit?usp=sharing" },
+            ]
+        },
+        {
+            title: "Natural Language Processing & Transformers",
+            date: "Nov 20, 2024, 2024",
+            resources: [
+                { name: "Lecture Slides", url: "https://docs.google.com/presentation/d/1_Ka4xxVkcposHTfyMAPelDVm0Gim47xtAdxbN1hzjBc/edit?usp=sharing" },
+            ]
         }
+        
     ];
 
     function getEmbedUrl(url) {
