@@ -30,7 +30,7 @@
         {
             title: "Neural Networks",
             date: "October 20, 2024",
-            videoUrl: "",
+            videoUrl: "https://www.youtube.com/watch?v=jmmW0F0biz0",
             resources: [
                 { name: "Lecture Slides", url: "https://docs.google.com/presentation/d/1kpWqDDNQ3mwsyamMgjVBqBbyXhBujRQoWL4Kbe12QrU/edit?usp=sharing" },
             ]
