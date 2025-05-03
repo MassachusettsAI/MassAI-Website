@@ -61,7 +61,7 @@
 </script>
 
 <div class="text-center">
-  <h2 class="font-fraunces font-extrabold text-5xl mb-10 dark:text-white">Lectures</h2>
+  <h2 class="font-fraunces font-extrabold text-5xl mb-10 dark:text-white">Lecture Recordings and Slides</h2>
 </div>
 
 <Accordion.Root class="dark:text-white max-w-3xl mx-auto [&>*]:border-b-2 [&>*]:border-gray-600 dark:[&>*]:border-gray-300">
