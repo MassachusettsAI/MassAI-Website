@@ -7,6 +7,7 @@
   import AboutUs from "$lib/components/about_us.svelte";
   import Backdrop from "$lib/components/backdrop.svelte";
   import Lectures from "$lib/components/lectures.svelte";
+  import Footer from "$lib/components/footer.svelte";
   let showBanner = false;
 </script>
 
@@ -55,3 +56,9 @@
     <Lectures />
   </div>
 </section>
+
+<Footer 
+  logoSrc="/static/images/ml-logo-border.png" 
+  logoAlt="MassAI Logo" 
+  copyrightText="© 2025 MassAI. All rights reserved." 
+/>
