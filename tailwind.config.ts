@@ -109,8 +109,8 @@ const config: Config = {
 			},
 			fontFamily: {
 				fraunces: [
-					'ExtraLight 200',
-					// 'IBM Plex Sans',
+					//'ExtraLight 200',
+					'IBM Plex Sans',
 					// 'Fraunces',
 					'serif'
 				],
