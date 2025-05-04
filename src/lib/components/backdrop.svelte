@@ -130,7 +130,7 @@
       z-index: 1;
     }
     #hero h1 {
-      background: linear-gradient(90deg, rgb(255, 179, 179), rgb(255, 138, 138));
+      background: linear-gradient(90deg, rgb(235, 66, 94), rgb(209, 27, 57));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
