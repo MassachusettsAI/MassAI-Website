@@ -1,7 +1,5 @@
 <!-- Footer.svelte -->
 <script>
-  // export let logoSrc = "/static/images/favicon-32x32.png"; 
-  // export let logoAlt = "MassAI Logo";
   export let copyrightText = `© ${new Date().getFullYear()} MassAI. All rights reserved.`;
   export let showSocialLinks = true;
 </script>
@@ -11,9 +9,6 @@
     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
       <!-- Logo and Copyright -->
       <div class="flex flex-col items-center md:items-start">
-        <div class="mb-4">
-          <img src={logoSrc} alt={logoAlt} class="h-12" />
-        </div>
         <p class="text-slate-300">{copyrightText}</p>
       </div>
       
