@@ -1,6 +1,6 @@
 <!-- Footer.svelte -->
 <script>
-  export let logoSrc = "/static/images/ml-logo-border.png"; 
+  export let logoSrc = "/static/images/favicon-32x32.png"; 
   export let logoAlt = "MassAI Logo";
   export let copyrightText = `© ${new Date().getFullYear()} MassAI. All rights reserved.`;
   export let showSocialLinks = true;
