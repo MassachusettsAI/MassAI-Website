@@ -16,7 +16,7 @@
             name: "Niko Lorantos",
             title: "Vice President of Education",
             picture: "/images/niko_lorantos.jpg",
-            bio: "Niko Lorantos is an honors student studying computational mathematics and minoring in philosophy. He is interested in all things AI, from industry trends to niche research topics. He is currently involved in artificial life research at Amherst College."
+            bio: "I'm an undergrad studying math and researching in neural computation and artificial life. I'm interested in all things AI from language models to spiking neural networks."
         },
         {
             name: "Shriya Gautam",
