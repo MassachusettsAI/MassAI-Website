@@ -6,9 +6,21 @@
 
   <div class="container mx-auto text-center relative z-10">
     <h1 class="font-fraunces font-extrabold text-5xl mb-4">About Us</h1>
-    <p class="text-lg max-w-2xl mx-auto">
+    <p class="text-xl max-w-4xl mx-auto">
       We are UMass Amherst's premier student organization for students passionate about machine learning and artificial intelligence. Whether you're interested in learning the fundamentals or eager to work on hands-on projects, this is the place for you! 
     </p>
+    <br><br><br>
+    <h1 class="font-fraunces font-extrabold text-5xl mb-4">Alumni Placements</h1>
+    <p class="text-xl max-w-4xl mx-auto">
+      From cutting-edge university labs and big tech to unicorns, quant firms, and seed-stage AI startups, our alumni are laying the foundations of modern AI systems.
+    </p>
+    <div class="flex justify-center items-center gap-10 p-5 flex-wrap mt-8">
+      <img src="/images/MIT_Logo.png" alt="MIT Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
+      <img src="/images/Nvidia_Logo.png" alt="Nvidia Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
+      <img src="/images/Lyft_Logo.png" alt="Lyft Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
+      <img src="/images/Meta_Logo.png" alt="Lyft Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
+    </div>
+  <div>
   </div>
 
 </section>

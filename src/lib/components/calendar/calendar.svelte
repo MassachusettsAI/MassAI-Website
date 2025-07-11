@@ -306,12 +306,12 @@
                 </Button>
               </div>
             {/if}
-              <div class="mt-2">
-                <Button class="bg-blue-500 hover:bg-blue-600 dark:text-white" target="_block" href="https://umass-amherst.zoom.us/j/5724461019?pwd=QU9valdBekpxNnY5QktQakR3MVNlQT09">
-                  Join on Zoom
-                  <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>
-                </Button>
-              </div>
+<!--              <div class="mt-2">-->
+<!--                <Button class="bg-blue-500 hover:bg-blue-600 dark:text-white" target="_block" href="https://umass-amherst.zoom.us/j/5724461019?pwd=QU9valdBekpxNnY5QktQakR3MVNlQT09">-->
+<!--                  Join on Zoom-->
+<!--                  <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-sl2ubhge=""> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" data-astro-cid-sl2ubhge=""></path> </svg>-->
+<!--                </Button>-->
+<!--              </div>-->
           </span>
           <span class="flex">
             <div class="mt-auto">
