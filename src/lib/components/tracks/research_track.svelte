@@ -2,7 +2,7 @@
     import {Button, buttonVariants} from "$lib/components/ui/button";
 </script>
 <div class="text-lg text-center">
-  Research is at the core of Machine Learning, and our paper reading group will give you the foundational knowledge necessary to run your own experiments.
+  Research is at the core of Machine Learning, and our paper reading group will give you the foundational knowledge necessary to run your own experiments. Our discussions will be each Monday from 7-8 pm.
   The reading group meets every week and is open to newcomers at any time! :O
 </div>
 <div class="flex justify-center mt-3">
@@ -21,7 +21,7 @@
       </svg>
     </span>
     <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-      Read Paper of the Week
+      Read Paper of the Week (Recommended, but not required)
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400 dark:text-gray-500">
       Before Meeting
@@ -51,7 +51,7 @@
       Open-Floor Discussion
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400 dark:text-gray-500">
-      20-40 Minutes
+      45 Minutes
     </time>
   </li>
   <li class="mb-4 ms-6">
@@ -64,7 +64,7 @@
       Vote On Next Week's Paper
     </h3>
     <time class="block mb-2 text-base text-md font-normal leading-none text-gray-400 dark:text-gray-500">
-      10 Minutes
+      5 Minutes
     </time>
   </li>
 </ol>
