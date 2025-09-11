@@ -27,8 +27,8 @@
         {
             name: "Nathan Wolf",
             title: "Events Coordinator",
-            picture: "/images/ml-logo-border.jpeg",
-            bio: ""
+            picture: "/images/Nathan_Wolf.jpg",
+            bio: "Hi! I'm a senior CS/Computational Linguistics major, and I will be mostly in charge of competition events. My main research focus is NLP, and I am currently doing an honors thesis on LLM tokenization schemes. I am excited to get to know you all this semester!"
         },
         {
             name: "Mark Iyer",
