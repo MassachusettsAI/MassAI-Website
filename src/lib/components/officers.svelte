@@ -1,10 +1,10 @@
 <script lang="ts">
     const eBoardMembers = [
         {
-            name: "Donald Winkelman",
+            name: "Nathan Wolf",
             title: "President of Outreach",
-            picture: "/images/donnie_winkelman.jpg",
-            bio: "Hi y’all, I’m Donnie! I’m in the MS CS program at UMass and delving further into deep learning! I’ve done some research in interpretability and safety (exploring how models think) alongside experiments with computer vision models. I enjoy reading papers in medicine and ML and want to specialize in medical AI to increase diagnostic accuracy, surgical accuracy, enable the development of more complex laboratory-made proteins, and much more. Look forward to meeting y'all!"
+            picture: "/images/Nathan_Wolf.jpg",
+            bio: "Hi! I'm a senior CS/Computational Linguistics major, and I'm excited to build ML projects with y'all this semester! My main research focus is NLP, specifically mechanistic interpretability and the intersection of deep NLP and linguistics. I am currently doing an honors thesis on LLM tokenization schemes, and helping out with some interpretability research at Amherst College."
         },
         {
             name: "Aryaman Tepal",
@@ -23,12 +23,6 @@
             title: "Vice President of Outreach",
             picture: "/images/shriya_gautam.jpeg",
             bio: "Hi! I'm a sophomore CS/Stats major and philosophy minor, and I'm extremely excited to be your VP of Outreach this semester! I'm especially interested in using ML to solve real world problems, especially when combined with other fields of study. Feel free to ask me about any of my previous ML projects!"
-        },
-        {
-            name: "Nathan Wolf",
-            title: "Events Coordinator",
-            picture: "/images/Nathan_Wolf.jpg",
-            bio: "Hi! I'm a senior CS/Computational Linguistics major, and I will be mostly in charge of competition events. My main research focus is NLP, and I am currently doing an honors thesis on LLM tokenization schemes. I am excited to get to know you all this semester!"
         },
         {
             name: "Mark Iyer",
