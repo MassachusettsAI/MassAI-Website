@@ -22,7 +22,7 @@
             name: "Shriya Gautam",
             title: "Vice President of Outreach",
             picture: "/images/shriya_gautam.jpeg",
-            bio: "Hi! I'm a sophomore CS/Stats major and philosophy minor, and I'm extremely excited to be your VP of Outreach this semester! I'm especially interested in using ML to solve real world problems, especially when combined with other fields of study. Feel free to ask me about any of my previous ML projects!"
+            bio: "Hello! I'm a senior CS/Stats major, and I'm extremely excited to be your VP of Outreach this semester! I'm especially interested in using ML to solve real world problems, especially when combined with other fields of study like environmental science and physics. Feel free to ask me about any of my previous ML projects!"
         },
         {
             name: "Mark Iyer",
