@@ -10,7 +10,7 @@
             name: "Aryaman Tepal",
             title: "President of Education",
             picture: "/images/aryaman_tepal.jpg",
-            bio: "Hi, I'm Aryaman! I'm a sophomore Honors CS + Applied Math major, and I'm looking forward to being the president of education this semester! I've worked on some research in Hyperspectral Image Clustering and Trustworthy AI / ML research. I really love soccer, so I'm currently exploring geometric DL to figure out how Barcelona can concede less goals. That said, I enjoy the math & algorithm side of things quite a bit, so I enjoy working on any applications of ML in real-life! Very excited for this upcoming semester!"
+            bio: "Hi! I'm a junior Honors CS + Applied Math major, and I'm excited to work with you all on cool ML projects! I've worked on some research in Hyperspectral Image Clustering, Remote Sensing and Trustworthy AI / ML."
         },
         {
             name: "Niko Lorantos",
