@@ -13,13 +13,13 @@
   <Accordion.Root class="m-1 max-w-3xl w-full [&>*]:border-b-2 [&>*]:border-gray-600 dark:[&>*]:border-gray-300" value="item-1">
 <!--  <Accordion.Root class="m-1 max-w-3xl w-full" value="item-1">-->
     <Accordion.Item value="item-1">
-      <Accordion.Trigger class="text-2xl text-fuchsia-500 w-full">
+      <Accordion.Trigger class="text-2xl text-emerald-500 w-full">
         <div class="w-full flex items-center justify-center">
-          <span class="flex-1 text-center">Workshops</span>
+          <span class="flex-1 text-center">Projects</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
-        <WorkshopTrack />
+        <ProjectTrack />
       </Accordion.Content>
     </Accordion.Item>
     <Accordion.Item value="item-2">
@@ -43,13 +43,13 @@
       </Accordion.Content>
     </Accordion.Item>
     <Accordion.Item value="item-4">
-      <Accordion.Trigger class="text-2xl text-emerald-500 w-full">
+      <Accordion.Trigger class="text-2xl text-fuchsia-500 w-full">
         <div class="w-full flex items-center justify-center">
-          <span class="flex-1 text-center">Projects</span>
+          <span class="flex-1 text-center">Workshops</span>
         </div>
       </Accordion.Trigger>
       <Accordion.Content>
-        <ProjectTrack />
+        <WorkshopTrack />
       </Accordion.Content>
     </Accordion.Item>
   </Accordion.Root>

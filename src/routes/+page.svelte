@@ -15,8 +15,8 @@
 
 <div class="relative">
   {#if showBanner}
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9BIhuO5XlXsrIIMk1OiV4KDpnkzgZ007b1wnIknLbso5X8g/viewform" target="_blank" class="block text-center h-20 bg-emerald-600 text-lg text-white hover:bg-emerald-700 transition-colors flex items-center justify-center font-medium p-4 shadow-md mt-16 pb-1">
-      Apply to join the MassAI Eboard for the Spring 2026 semester!
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6eB3B3jGp9DBfzKN2eEN3vImAAdCGECt_nFhYIaDV6CMfSA/viewform" target="_blank" class="block text-center h-20 bg-blue-600 text-lg text-white hover:bg-blue-700 transition-colors flex items-center justify-center font-medium p-4 shadow-md mt-16 pb-1">
+      Apply to Join a Project Team for the Spring 2026 Semester!
       <button on:click|preventDefault={() => showBanner = false} class="absolute right-4 top-1/2 -translate-y-1/2 text-2xl">&times;</button>
     </a>
   {:else}

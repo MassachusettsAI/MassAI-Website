@@ -84,6 +84,12 @@
             picture: "",
             bio: ""
         },
+        {
+            name: "Jonathan Liu",
+            title: "Marketing Coordinator",
+            picture: "/images/jonathan_liu.jpg",
+            bio: "Hey everyone, I’m Jonathan! I’m a freshman CS major with an interest in AI/ML, particularly natural language processing and computer vision. I’m excited to use AI to solve real-world problems in the future. I’m also looking forward to serving as a MassAI marketing coordinator this semester and can’t wait to meet you all!"
+        },
         // {
         //     name: "Rehan Taneja",
         //     title: "Project Lead",
@@ -95,12 +101,6 @@
         //     title: "Project Lead",
         //     picture: "/images/ml-logo-border.jpeg",
         //     bio: "Hi, I’m Aryaman Goenka! I’m a curious and driven Computer Science freshman at UMass Amherst, passionate about building tech that makes an impact. Whether it’s crafting AI-driven apps, designing neural network tools, or diving into hackathons, I thrive at the intersection of creativity and problem-solving. I love experimenting, learning, and collaborating on projects that push boundaries. Let’s innovate, build, and make cool things happen together!"
-        // },
-        // {
-        //     name: "Jonathan Liu",
-        //     title: "Marketing Coordinator",
-        //     picture: "/images/jonathan_liu.jpg",
-        //     bio: "Hey everyone, I’m Jonathan! I’m a freshman CS major with an interest in AI/ML, particularly natural language processing and computer vision. I’m excited to use AI to solve real-world problems in the future. I’m also looking forward to serving as a MassAI marketing coordinator this semester and can’t wait to meet you all!"
         // },
         // {
         //     name: "Trung Dang",

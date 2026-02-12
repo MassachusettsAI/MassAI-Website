@@ -3,15 +3,13 @@
 </script>
 
 <div class="text-lg text-center whitespace-pre-line">
-  The projects track is offered every year during the spring semester. We won't be offering it in Fall 2025, but stay tuned for Spring 2026!
+  We will be offering the project track in Spring 2026! Join our instagram or discord to stay updated! :>
 
-  Collaborate with friends and fellow students on a self-led or club-led project in AI. Present your findings to research and industry experts at our end-of-semester poster session :>
+  Collaborate with friends and fellow students on a self-led or mentor-led project in AI. Present your findings to research and industry experts at our end-of-semester hackathon!
 
   Self-led projects are solo or led by groups of students. If you need teammates, we'll help match you to students with similar interests during the first meeting. Teams and solo projects will be finalized during the second meeting. You'll receive mentorship from MassAI, but you have full freedom to lead your project.
 
-  Club-led projects are chosen both by groups of students and the club. They are led by a project lead on the E-Board. We'll match you to club-led projects in the first meeting and finalize teams in the second meeting.
-
-  You (or your team) may complete the project ahead of schedule. Attending the MassAI conference is not required but encouraged so you can show off your work!
+  Mentor-led projects are chosen both by groups of students and the club. They are led by a project lead on the E-Board. We'll match you to mentor-led projects in the second meeting and finalize teams in the third meeting.
 </div>
 <!--<ol class="ml-5 relative m-4 border-s border-gray-400 dark:border-gray-700">-->
 <!--  <li class="mb-4 ms-6">-->
