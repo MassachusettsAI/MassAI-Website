@@ -18,7 +18,8 @@
       <img src="/images/MIT_Logo.png" alt="MIT Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
       <img src="/images/Nvidia_Logo.png" alt="Nvidia Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
       <img src="/images/Lyft_Logo.png" alt="Lyft Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
-      <img src="/images/Meta_Logo.png" alt="Lyft Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
+      <img src="/images/Meta_Logo.png" alt="Meta Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
+      <img src="/images/Citadel_Logo.png" alt="Citadel Logo" class="h-32 w-auto object-contain transition-transform duration-300 hover:scale-105">
     </div>
   <div>
   </div>
