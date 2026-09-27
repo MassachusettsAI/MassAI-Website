@@ -17,6 +17,9 @@ export const placements = [
     { name: "Lyft", logo: "/images/Lyft_Logo.png" },
     { name: "Meta", logo: "/images/Meta_Logo.png" },
     { name: "Citadel", logo: "/images/Citadel_Logo.png" },
+    { name: "Robinhood", logo: "/images/Robinhood_Logo.png" },
+    { name: "Cornell Tech", logo: "/images/Cornell_Tech_Logo.png" },
+    { name: "Loman AI", logo: "/images/Loman_AI_Logo.png" },
 ];
 
 export type ScheduleItem = { date: string; title: string; speakers: string; off?: boolean };

@@ -67,9 +67,9 @@
 
   <!-- Placements -->
   <section class="bg-black py-6 border-b-4 border-black">
-    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-4">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-3">
       {#each placements as p}
-        <div class="h-16 w-36 bg-white rounded-lg flex items-center justify-center p-2"><img src={p.logo} alt={p.name} class="max-h-full max-w-full object-contain" /></div>
+        <div class="h-16 w-32 bg-white rounded-lg flex items-center justify-center p-2"><img src={p.logo} alt={p.name} class="max-h-full max-w-full object-contain" /></div>
       {/each}
     </div>
   </section>
@@ -137,7 +137,7 @@
       {#each alumni as a, i}
         {@const p = splitPosition(a.position)}
         {@const logos = logosFor(a.position)}
-        <div class="card {cardColors[(i + 2) % cardColors.length]}">
+        <div class="card flex flex-col {cardColors[(i + 2) % cardColors.length]}">
           {#if logos.length}
             <div class="flex gap-2">
               {#each logos as l}
@@ -149,7 +149,7 @@
             <div class="text-3xl font-extrabold">{p.org || p.role}</div>
             <div class="text-sm font-semibold">{p.org ? p.role : ""}{p.extra ? ` · ${p.extra}` : ""}</div>
           {/if}
-          <div class="flex items-center gap-3 mt-5">
+          <div class="flex items-center gap-3 mt-auto pt-5">
             <img src={a.picture} alt={a.name} class="w-10 h-10 rounded-full object-cover border-2 border-black" />
             <span class="font-bold">{a.name}</span>
           </div>
